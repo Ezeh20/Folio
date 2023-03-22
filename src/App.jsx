@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './App.scss'
 import Main from './Pages/Home'
 import Intro from './Pages/Intro/intro'
+import { motion } from 'framer-motion'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -12,11 +13,12 @@ function App() {
     return () => clearTimeout(time)
   }, [])
   return (
-    <div>
+    <motion.div>
+
       {
         loading ? <Intro /> : <Main />
       }
-    </div>
+    </motion.div>
   )
 }
 

@@ -28,10 +28,50 @@
             }
         }
 
-        .menus {
+        .menuShow {
+            width: 100%;
             position: fixed;
-            background: #000;
-            right: -100%;
+            inset: 0;
+            z-index: -10;
+
+            .backdropalt {
+                /* From https://css.glass */
+                background: rgba(255, 255, 255, 0.08);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(1px);
+                -webkit-backdrop-filter: blur(1px);
+                position: fixed;
+                inset: 0;
+            }
+
+            .menus {
+                position: fixed;
+                background:#112240;
+                top: 0;
+                right: -100%;
+                min-height: 100vh;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 3rem;
+                color: $text;
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: .5rem;
+                    color: $secondary;
+                }
+                .navi{
+                    color: $heading;
+                }
+            }
+
+            .menusOpen {
+                right: 0;
+            }
         }
 
         .buger {
@@ -64,7 +104,7 @@
             .line1alt {
                 width: fn.rem(30);
                 transform: rotate(-45deg);
-                transform-origin: 80% 100%;
+                transform-origin: 75% 100%;
             }
 
             .line2alt {
@@ -74,7 +114,7 @@
 
             .line3alt {
                 width: fn.rem(30);
-                transform-origin: 60% 90%;
+                transform-origin: 70% 100%;
                 transform: rotate(45deg);
             }
         }

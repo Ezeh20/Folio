@@ -1,0 +1,12 @@
+@use '../../scss/global/colors'as *;
+
+.button {
+    background-color: transparent;
+    outline: none;
+    border: 1.5px solid $secondary;
+    width: max-content;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: $secondary;
+    font-weight: 100;
+}
