@@ -14,25 +14,33 @@
     position: sticky;
     padding-block: 2rem;
     top: 0;
+    overflow: hidden;
 
     .nav {
         display: flex;
         justify-content: space-between;
-
         width: 100%;
 
         .logoContainer {
             .logo {
                 width: fn.rem(35);
 
+                @media screen and (min-width:769px) {
+                    width: fn.rem(40);
+                }
+                &:hover{
+                   cursor: pointer; 
+                }
             }
         }
 
         .menuShow {
-            width: 100%;
-            position: fixed;
-            inset: 0;
-            z-index: -10;
+            @media screen and (max-width:768px) {
+                width: 100%;
+                position: fixed;
+                inset: 0;
+                z-index: -10;
+            }
 
             .backdropalt {
                 /* From https://css.glass */
@@ -42,29 +50,59 @@
                 -webkit-backdrop-filter: blur(1px);
                 position: fixed;
                 inset: 0;
+
+                @media screen and (min-width:769px) {
+                    background: transparent;
+                    backdrop-filter: blur(0);
+                }
             }
 
             .menus {
-                position: fixed;
-                background:#112240;
-                top: 0;
-                right: -100%;
-                min-height: 100vh;
-                width: 70%;
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                column-gap: 2rem;
                 align-items: center;
-                row-gap: 3rem;
-                color: $text;
-                .list{
+                transition: all 500ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+                @media screen and (max-width:768px) {
+                    position: fixed;
+                    background: #112240;
+                    top: 0;
+                    right: -100%;
+                    width: 70%;
+                    min-height: 100vh;
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
                     align-items: center;
-                    row-gap: .5rem;
-                    color: $secondary;
+                    row-gap: 3rem;
+                    color: $text;
                 }
-                .navi{
+
+                @media screen and (min-width:600px) {
+                    width: 400px;
+                }
+
+                @media screen and (min-width:769px) {
+                    width: 100%;
+                }
+
+                .list {
+                    color: $secondary;
+
+                    @media screen and (max-width:768px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        row-gap: .5rem;
+
+                    }
+                }
+
+                .list span {
+                    font-size: 14px;
+                }
+
+                .navi {
                     color: $heading;
                 }
             }
@@ -116,6 +154,10 @@
                 width: fn.rem(30);
                 transform-origin: 70% 100%;
                 transform: rotate(45deg);
+            }
+
+            @media screen and (min-width:769px) {
+                display: none;
             }
         }
     }

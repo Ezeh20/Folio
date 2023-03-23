@@ -9,4 +9,10 @@
     border-radius: 5px;
     color: $secondary;
     font-weight: 100;
+    font-size: 13px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $hover;
+    }
 }
