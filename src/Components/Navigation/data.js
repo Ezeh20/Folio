@@ -1,24 +1,24 @@
 const menu = [
     {
-        id: 0,
+        id: 1,
         number: `01 . `,
         text: 'About',
         to: 'about',
     },
     {
-        id: 1,
+        id: 2,
         number: `02 . `,
         text: 'Experience',
         to: 'experience',
     },
     {
-        id: 2,
+        id: 3,
         number: `03 . `,
         text: 'Work',
         to: 'work'
     },
     {
-        id: 3,
+        id: 4,
         number: `04 . `,
         text: 'Contact',
         to: 'contact',

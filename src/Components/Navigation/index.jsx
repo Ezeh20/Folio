@@ -18,7 +18,7 @@ const Navigation = () => {
             x: 0,
             opacity: 1,
             transition: {
-               
+
                 when: "beforeChildren"
             }
         }
@@ -26,16 +26,12 @@ const Navigation = () => {
     const listVariant = {
         hidden: {
             opacity: 0,
-            y:-100
+            x: 100
 
         },
         visible: {
             opacity: 1,
-            y:0,
-            transition: {
-                delay:1,
-                staggerChildren: 5,
-            }
+            x: 0,
         }
     }
 
@@ -64,6 +60,7 @@ const Navigation = () => {
                                     return (
                                         <motion.li
                                             variants={listVariant}
+                                            transition={{ duration: 1.5, delay: id * .3, type: "spring" }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} className={styles.navi}>{text}</Link>
                                         </motion.li>
