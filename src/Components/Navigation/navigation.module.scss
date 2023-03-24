@@ -28,8 +28,9 @@
                 @media screen and (min-width:769px) {
                     width: fn.rem(40);
                 }
-                &:hover{
-                   cursor: pointer; 
+
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -96,6 +97,10 @@
                         row-gap: .5rem;
 
                     }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
 
                 .list span {
@@ -104,6 +109,9 @@
 
                 .navi {
                     color: $heading;
+                    &:hover{
+                        color: $secondary;
+                    }
                 }
             }
 

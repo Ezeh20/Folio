@@ -15,6 +15,8 @@ const Intro = () => {
 
             </svg>
 
+            <p>Design by Brittany Chiang</p>
+
 
         </div>
     )

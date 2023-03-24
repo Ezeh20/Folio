@@ -12,6 +12,8 @@
     align-content: center;
     justify-content: center;
     background-color: #0b121ff1;
+    flex-direction: column;
+    row-gap: 1rem;
 
     .svg {
         width: 170px;

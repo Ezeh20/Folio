@@ -60,7 +60,7 @@ const Navigation = () => {
                                     return (
                                         <motion.li
                                             variants={listVariant}
-                                            transition={{ duration: 1.5, delay: id * .3, type: "spring" }}
+                                            transition={{ duration: 2, delay: id * .45, type: "spring" }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} className={styles.navi}>{text}</Link>
                                         </motion.li>
