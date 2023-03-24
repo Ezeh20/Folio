@@ -11,10 +11,7 @@ const Main = () => {
         <>
             <Layout>
                 <Cta />
-                {/** <About />
-                <Experience />
-                <Projects />
-                <Contact /> */}
+                <About />
             </Layout>
         </>
     )

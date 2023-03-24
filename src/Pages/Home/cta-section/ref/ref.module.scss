@@ -1,0 +1,24 @@
+@use '../../../../scss/global/colors' as *;
+.ref {
+    position:fixed;
+    bottom: 0;
+    right: 55px;
+    display: none;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    @media screen and (min-width:769px) {
+        display: flex;
+    }
+    .email{
+        font-size: 14px;
+        letter-spacing: 2px;
+        writing-mode: vertical-rl;
+    }
+    .line{
+        width: 2px;
+        height: 100px;
+        background: $text;
+    }
+}

@@ -48,7 +48,7 @@ const Navigation = () => {
                     </Link>
                     <div
                         className={styles.menuShow}>
-                        <div className={toggle && styles.backdropalt} />
+                        <div className={toggle ? styles.backdropalt : undefined} />
                         <motion.ul
                             variants={listsVariant}
                             animate="visible"

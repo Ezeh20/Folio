@@ -1,0 +1,10 @@
+.content {
+    margin-inline: inherit;
+    max-width: 1200px;
+    background-color: red;
+
+    @media screen and (min-width:769px) {
+        margin-inline: auto;
+        background-color: red;
+    }
+}

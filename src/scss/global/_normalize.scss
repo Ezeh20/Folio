@@ -1,6 +1,23 @@
 @use '../utils' as utils;
-@use './colors' as colors;
+@use './colors' as *;
 @use '../utils/functions' as fn;
+
+:root {
+  font-family: 'Poppins', sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #838daaff;
+  background-color: #0a192f;
+  font-size: 16px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
 
 html {
   box-sizing: border-box;
@@ -16,15 +33,15 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: utils.$base-font;
-  background-color: colors.$base-bg;
-  color: colors.$dark;
+img {
+  max-width: 100%;
 }
 
 a,
@@ -41,6 +58,17 @@ a:active {
   letter-spacing: fn.rem(0.2);
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  display: inline-flex;
+  width: .4vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background:linear-gradient(transparent, $secondary);
+  border-radius: 20px;
+}
+
 
 button {
   outline: none;

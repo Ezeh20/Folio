@@ -1,9 +1,42 @@
 import React from 'react'
+import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi";
+import styles from './socials.module.scss'
+
+const icons = [
+    {
+        id: 1,
+        icn: <FiGithub />,
+    },
+    {
+        id: 2,
+        icn: <FiLinkedin />,
+    },
+    {
+        id: 3,
+        icn: <FiTwitter />,
+    },
+    {
+        id: 4,
+        icn: <FiMail />,
+    },
+]
 
 const Socials = () => {
-  return (
-    <div>Socials</div>
-  )
+    return (
+        <div className={styles.socials}>
+            {
+                icons.map((itm) => {
+                    const {id, icn} = itm
+                    return (
+                        <div key={id} className={styles.icons}>
+                            {icn}
+                        </div>
+                    )
+                })
+            }
+            <div className={styles.line} />
+        </div>
+    )
 }
 
 export default Socials
