@@ -15,7 +15,7 @@
     padding-block: 2rem;
     top: 0;
     overflow: hidden;
-    z-index: 10;
+    z-index: 100;
 
     .nav {
         display: flex;
@@ -24,12 +24,9 @@
 
         .logoContainer {
             .logo {
-                width: fn.rem(35);
+                width: fn.rem(45);
 
-                @media screen and (min-width:769px) {
-                    width: fn.rem(40);
-                }
-
+              
                 &:hover {
                     cursor: pointer;
                 }
@@ -39,9 +36,6 @@
         .menuShow {
             @media screen and (max-width:768px) {
                 width: 100%;
-                position: fixed;
-                inset: 0;
-                z-index: -10;
             }
 
             .backdropalt {
@@ -123,6 +117,7 @@
                 right: 0;
             }
         }
+       
 
         .buger {
             display: flex;

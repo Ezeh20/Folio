@@ -67,7 +67,7 @@ const Navigation = () => {
                                     )
                                 })
                             }
-                            <Button >Resume</Button>
+                            <Button>Resume</Button>
                         </motion.ul>
                     </div>
                     <div className={styles.buger} onClick={() => setToggle(!toggle)}>

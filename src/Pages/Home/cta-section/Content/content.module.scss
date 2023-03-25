@@ -1,0 +1,96 @@
+@use '../../../../scss/global/colors'as *;
+@use '../../../../scss/utils/fonts'as *;
+@use '../../../../scss/utils/functions'as fn;
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+   @media screen and (min-width:769px) {
+    row-gap: 0;
+   }
+
+    .contentTop {
+        display: flex;
+        flex-direction: column;
+        row-gap: .8rem;
+        align-self: flex-start;
+        justify-self: start;
+
+        .greeting {
+            color: $secondary;
+            font-family: $fontAlt;
+            font-size: fn.rem(20);
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+                font-size: fn.rem(30);
+                color: $heading;
+
+                @media screen and (min-width:680px) {
+                    font-size: fn.rem(45);
+                }
+
+                @media screen and (min-width:1024px) {
+                    font-size: fn.rem(60);
+                }
+
+                @media screen and (min-width:1440px) {
+                    font-size: fn.rem(75);
+                }
+            }
+
+            .role {
+                font-size: fn.rem(22);
+                color: $heading;
+                opacity: .65;
+
+                @media screen and (min-width:680px) {
+                    font-size: fn.rem(40);
+                }
+                @media screen and (min-width:1440px) {
+                    font-size: fn.rem(50);
+                }
+            }
+        }
+
+        .details {
+            text-align: start;
+            font-weight: 300;
+            max-width: 800px;
+
+            @media screen and (min-width:1440px) {
+                max-width: 500px;
+            }
+        }
+
+        .btn {
+            margin-top: 1rem;
+            z-index: 20;
+        }
+    }
+    .socials{
+        display: flex;
+    }
+
+    .imgCta {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width:769px) {
+            justify-content: end;
+        }
+
+        .ctaImg {
+            max-width: fn.rem(430);
+            opacity: .6;
+        }
+    }
+}

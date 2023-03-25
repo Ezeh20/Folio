@@ -21,12 +21,12 @@ const icons = [
     },
 ]
 
-const Socials = () => {
+const Socials = ({ type }) => {
     return (
-        <div className={styles.socials}>
+        <div className={type === 'small' ? `${styles.socialsAlt} ${styles.socials}` : `${styles.socials}`}>
             {
                 icons.map((itm) => {
-                    const {id, icn} = itm
+                    const { id, icn } = itm
                     return (
                         <div key={id} className={styles.icons}>
                             {icn}

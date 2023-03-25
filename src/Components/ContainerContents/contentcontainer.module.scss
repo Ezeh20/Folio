@@ -1,10 +1,19 @@
 .content {
     margin-inline: inherit;
-    max-width: 1200px;
-    background-color: red;
-
+   
     @media screen and (min-width:769px) {
-        margin-inline: auto;
-        background-color: red;
+
+        margin-inline: 4rem;
     }
+    @media screen and (min-width:1024px) {
+        width: 800px;
+        margin-inline: auto;
+    }
+    @media screen and (min-width:1280px) {
+        width: 1024px;
+    }
+    @media screen and (min-width:1440px) {
+        width: 1200px;
+    }
+    
 }
