@@ -3,7 +3,7 @@ import Button from '../../../../Components/Button/button'
 import Socials from '../Socials/socials'
 import styles from './content.module.scss'
 import content from './data'
-const { greeting, name, image, details, role, cta } = content
+const { greeting, name, details, role, cta } = content
 
 const Content = () => {
   return (

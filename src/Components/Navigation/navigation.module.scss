@@ -26,7 +26,6 @@
             .logo {
                 width: fn.rem(45);
 
-              
                 &:hover {
                     cursor: pointer;
                 }
@@ -102,12 +101,13 @@
 
                 .list span {
                     font-size: 14px;
-                    
+
                 }
 
                 .navi {
                     color: $heading;
-                    &:hover{
+
+                    &:hover {
                         color: $secondary;
                     }
                 }
@@ -117,7 +117,7 @@
                 right: 0;
             }
         }
-       
+
 
         .buger {
             display: flex;

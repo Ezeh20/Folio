@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import Container from '../Container/container'
 import menu from './data'
 import styles from './navigation.module.scss'
-import { AnimatePresence, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import Button from '../Button/button'
 
 const Navigation = () => {
@@ -60,7 +60,7 @@ const Navigation = () => {
                                     return (
                                         <motion.li
                                             variants={listVariant}
-                                            transition={{ duration: 2, delay: id * .45, type: "spring" }}
+                                            transition={{ duration: 2, delay: id * .35, type: "spring" }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} className={styles.navi}>{text}</Link>
                                         </motion.li>

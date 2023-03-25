@@ -5,7 +5,6 @@ const content = {
     details: `I'm a passionate and always ready to learn frontend web developer, 
     who has the zeal to implement pixel perfect designs while placing the user's experience in mind.`,
     cta: 'Contact me',
-    image: ''
 }
 
 export default content
