@@ -10,7 +10,7 @@ const Navigation = () => {
     const [toggle, setToggle] = useState(false)
     const listsVariant = {
         hidden: {
-            x: "100%",
+            x: '100%',
             opacity: 0,
 
         },
@@ -18,7 +18,6 @@ const Navigation = () => {
             x: 0,
             opacity: 1,
             transition: {
-
                 when: "beforeChildren"
             }
         }
@@ -51,8 +50,9 @@ const Navigation = () => {
                         <div className={toggle ? styles.backdropalt : undefined} />
                         <motion.ul
                             variants={listsVariant}
-                            animate="visible"
+                            whileInView="visible"
                             initial="hidden"
+                            viewport={{ once: true }}
                             className={!toggle ? styles.menus : `${`${styles.menus} ${styles.menusOpen}`}`}>
                             {
                                 menu.map((itm) => {
@@ -60,7 +60,7 @@ const Navigation = () => {
                                     return (
                                         <motion.li
                                             variants={listVariant}
-                                            transition={{ duration: 2, delay: id * .35, type: "spring" }}
+                                            transition={{ duration: 1, delay: id * .35, type: "spring" }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} className={styles.navi}>{text}</Link>
                                         </motion.li>
