@@ -27,7 +27,7 @@ const contentTop = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.5,
+      delay: .7,
       duration: .5
     }
   },
@@ -35,7 +35,7 @@ const contentTop = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.7,
+      delay: .9,
       duration: .5
     }
   },
@@ -43,7 +43,7 @@ const contentTop = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.9,
+      delay: 1.1,
       duration: .5
     }
   },
@@ -51,7 +51,7 @@ const contentTop = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 2.1,
+      delay: 1.3,
       duration: .5
     }
   },

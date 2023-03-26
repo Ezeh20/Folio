@@ -1,6 +1,7 @@
-@use '../utils' as utils;
-@use './colors' as *;
-@use '../utils/functions' as fn;
+@use '../utils'as utils;
+@use './colors'as *;
+@use '../utils/functions'as fn;
+@use '../utils/fonts'as *;
 
 :root {
   font-family: 'Poppins', sans-serif, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -15,7 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
+
 }
 
 
@@ -66,7 +67,7 @@ a:active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background:linear-gradient(transparent, $secondary);
+  background: linear-gradient(transparent, $secondary);
   border-radius: 20px;
 }
 
@@ -85,4 +86,22 @@ ul {
 
 li {
   letter-spacing: 0.5;
+}
+
+.heading {
+  font-size: fn.rem(22);
+  font-weight: 600;
+  color: $heading;
+
+  @media screen and (min-width:769px) {
+
+    font-size: fn.rem(30);
+  }
+}
+
+.spans {
+  color: $secondary;
+  font-size: fn.rem(18);
+  letter-spacing: 4px;
+  font-family: $fontAlt;
 }
