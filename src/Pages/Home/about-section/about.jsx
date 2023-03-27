@@ -5,6 +5,7 @@ import styles from './about.module.scss'
 import { motion } from 'framer-motion'
 import Description from './Description/description'
 import Images from './image/image'
+import Line from '../../../Components/Line/line'
 
 const About = () => {
   return (
@@ -17,9 +18,9 @@ const About = () => {
           transition={{ duration: .5, delay: .2 }}
           viewport={{ once: true }}
           className={styles.about}>
-          <div className={`head`}>
+          <div className={`${styles.header} head`}>
             <p className='heading'><span className='spans'>01.</span>About me</p>
-            <div className={styles.line} />
+            <Line />
           </div>
           <div className={styles.group}>
             <Description />

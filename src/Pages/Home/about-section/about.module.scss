@@ -5,6 +5,16 @@
         margin-top: 10rem;
     }
 
+    .header {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+
+        @media screen and (max-width:360px) {
+            column-gap: 0;
+        }
+    }
+
     .group {
         display: flex;
         flex-direction: column;

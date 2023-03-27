@@ -6,6 +6,7 @@ import Cta from './cta-section/cta-section'
 import Experience from './experience-section/experience'
 import Projects from './projects-section/projects'
 import styles from './index.module.scss'
+import Skills from './Skills/skills'
 
 const Main = () => {
     return (
@@ -13,6 +14,7 @@ const Main = () => {
             <Layout>
                 <Cta />
                 <About />
+                <Skills />
             </Layout>
         </div>
     )

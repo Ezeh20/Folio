@@ -1,0 +1,13 @@
+.line {
+    width: 45%;
+    height: 1px;
+    background: #8892b0ff;
+    opacity: .25;
+
+    @media screen and (min-width:769px) {
+        width: 35%;
+    }
+    @media screen and (max-width:320px) {
+        width: 0%;
+    }
+}

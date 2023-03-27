@@ -1,0 +1,40 @@
+@use '.../../../../../scss/global/colors'as *;
+
+.container {
+    margin-block: 5rem;
+
+    @media screen and (min-width:769px) {
+        margin-block: 8em;
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+        place-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+
+        .tool {
+            width: 100%;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $secondary;
+            opacity: .6;
+
+
+        }
+
+        .title {
+            font-weight: 300;
+            font-size: 14px;
+            display: none;
+
+            @media screen and (min-width:1024px) {
+                display: block;
+            }
+        }
+    }
+}
