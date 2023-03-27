@@ -10,21 +10,22 @@ const About = () => {
   return (
     <Container>
       <ContentContainer type='about'>
-        <motion.div
+        <motion.section
+          id='about'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: .5, delay: .2 }}
           viewport={{ once: true }}
           className={styles.about}>
-          <div>
-            <p className='heading'><span className='spans'>01.</span> About me</p>
+          <div className={`head`}>
+            <p className='heading'><span className='spans'>01.</span>About me</p>
             <div className={styles.line} />
           </div>
           <div className={styles.group}>
             <Description />
             <Images />
           </div>
-        </motion.div>
+        </motion.section>
       </ContentContainer>
     </Container>
   )

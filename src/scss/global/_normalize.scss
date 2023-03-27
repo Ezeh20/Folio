@@ -103,5 +103,8 @@ li {
   color: $secondary;
   font-size: fn.rem(18);
   letter-spacing: 4px;
-  font-family: $fontAlt;
+}
+
+.head {
+  margin-block: 2.5rem;
 }

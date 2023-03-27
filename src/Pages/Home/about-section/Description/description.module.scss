@@ -1,0 +1,10 @@
+.intro {
+    display: flex;
+    row-gap: 1.5rem;
+    text-align: left;
+    flex-direction: column;
+
+    @media screen and (min-width:769px) {
+        max-width: 550px;
+    }
+}

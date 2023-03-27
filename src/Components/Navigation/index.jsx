@@ -1,13 +1,21 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
 import Container from '../Container/container'
 import menu from './data'
 import styles from './navigation.module.scss'
 import { motion } from "framer-motion"
 import Button from '../Button/button'
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Navigation = () => {
     const [toggle, setToggle] = useState(false)
+
+    useEffect(() => {
+        let handler = () => {
+            setToggle(false)
+        }
+        document.addEventListener("mousedown", handler)
+        return () => document.removeEventListener("mousedown", handler)
+    })
     const listsVariant = {
         hidden: {
             x: '100%',
@@ -62,7 +70,7 @@ const Navigation = () => {
                                             variants={listVariant}
                                             transition={{ duration: 1, delay: id * .35, type: "spring" }}
                                             className={styles.list} key={id}>
-                                            <span>{number}</span>  <Link to={to} className={styles.navi}>{text}</Link>
+                                            <span>{number}</span>  <Link to={to} smooth className={styles.navi}>{text}</Link>
                                         </motion.li>
                                     )
                                 })
