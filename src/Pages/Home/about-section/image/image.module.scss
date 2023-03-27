@@ -1,0 +1,69 @@
+@use '../../../../scss/global/colors'as *;
+
+.person {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10rem;
+
+    .personContainer {
+        width: 15rem;
+        height: 15rem;
+        display: flex;
+        background: url(public/img/ceejay.jpg);
+        border-radius: 5px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        .filter {
+            background: #60e7cc;
+            width: 100%;
+            height: 100%;
+            transition: all 250ms ease-in-out;
+            opacity: .5;
+            filter: brightness(.5);
+        }
+
+
+        .imgMe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        .halo {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 1rem;
+            border-radius: 5px;
+            z-index: -1;
+            top: 1.2rem;
+            left: 1.3rem;
+            border: 2px solid $secondary;
+            transition: all 250ms ease-in-out;
+
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            .halo {
+                top: .9rem;
+                left: 1rem;
+            }
+
+            .filter {
+                opacity: 0;
+                transition: all 250ms ease-in-out;
+            }
+        }
+    }
+
+
+
+}
