@@ -107,3 +107,13 @@ li {
 .head {
   margin-block: 2.5rem;
 }
+
+.lineStyle {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+
+  @media screen and (max-width:360px) {
+    column-gap: 0;
+  }
+}

@@ -1,0 +1,79 @@
+@use '../../../scss/global/colors'as *;
+
+.exp {
+    .myExp {
+        .nav {
+            width: 100%;
+            overflow: scroll;
+            position: relative;
+            padding-bottom: .6rem;
+
+
+            .ul {
+                width: max-content;
+                display: flex;
+
+                position: relative;
+
+                .selected {
+                    background: #112240;
+                    color: $secondary;
+
+                    .underline {
+                        width: 100%;
+                        height: 3px;
+                        position: absolute;
+                        bottom: -1px;
+                        z-index: 1;
+                        background: $secondary;
+                        border-radius: 5px;
+                    }
+                }
+
+                
+            li {
+                display: flex;
+                width: max-content;
+                position: relative;
+                font-size: 14px;
+                transition: all 500ms ease-in-out;
+
+                .con {
+                    padding: 1rem 1.2rem;
+                }
+
+                &:hover {
+                    background: #112240;
+                    color: $secondary;
+                    cursor: pointer;
+
+                }
+            }
+
+            }
+
+
+        }
+
+        .nav::-webkit-scrollbar {
+            display: inline-flex;
+            width: 1%;
+            height: 10px;
+        }
+        .nav::-webkit-scrollbar-thumb {
+            background:rgba(204, 214, 246, .3);
+            border-radius: 20px;
+            
+          }
+
+        .ul::after {
+            content: '';
+            width: 100%;
+            height: .5px;
+            bottom: 0;
+            opacity: .5;
+            position: absolute;
+            background-color: $text;
+        }
+    }
+}

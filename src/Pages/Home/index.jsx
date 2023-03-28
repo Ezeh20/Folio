@@ -15,6 +15,7 @@ const Main = () => {
                 <Cta />
                 <About />
                 <Skills />
+                <Experience />
             </Layout>
         </div>
     )

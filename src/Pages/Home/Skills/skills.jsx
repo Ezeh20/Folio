@@ -56,7 +56,7 @@ const Skills = () => {
                                         variants={id % 2 === 0 ? variantIconsEven : variantIconsOdd}
                                         initial='hidden'
                                         whileInView='show'
-                                        transition={{ duration: .5, delay: id * .4 }}
+                                        transition={{ duration: .3, delay: id * .2 }}
                                         viewport={{once:true}}
                                         key={id} className={styles.tool}>
                                         <div>{icon}</div>
