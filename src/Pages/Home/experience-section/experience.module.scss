@@ -3,9 +3,12 @@
 @use '../../../scss/utils/functions'as fn;
 
 .exp {
+    margin-bottom: 3rem;
     .myExp {
         @media screen and (min-width:600px) {
-            display: flex;
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            column-gap: 2rem;
         }
 
         .nav {
@@ -103,23 +106,33 @@
 
         .main {
             margin-block: 1rem;
-            height: fn.rem(650);
+            max-height: fn.rem(650);
+        
+
+            @media screen and (min-width:600px) {
+                margin-block: .5rem;
+            }
 
             .animate {
+                max-width: 800px;
                 .content {
                     display: flex;
                     flex-direction: column;
                     row-gap: 1rem;
-                    background: #000;
-                    max-width: fn.rem(500);
-
                     .xpHeader {
                         margin-top: 1.2rem;
+
+                        @media screen and (min-width:600px) {
+                            margin-top: 0;
+                        }
 
                         .title {
                             font-weight: 400;
                             color: $heading;
                             font-size: fn.rem(18);
+                            @media screen and (min-width:600px) {
+                                font-size: fn.rem(22);
+                            }
                         }
 
                         .period {

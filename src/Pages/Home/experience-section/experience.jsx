@@ -19,7 +19,7 @@ const Experience = () => {
       <ContentContainer type='exp'>
         <section id='experience' className={styles.exp}>
           <div className={`lineStyle`}>
-            <p className={`heading head`}><span className={`spans`}>02.</span>Exp</p>
+            <p className={`heading head`}><span className={`spans`}>02.</span>Experience</p>
             <Line />
           </div>
           <section className={styles.myExp}>
