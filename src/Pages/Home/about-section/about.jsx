@@ -13,9 +13,9 @@ const About = () => {
       <ContentContainer type='about'>
         <motion.section
           id='about'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: .5, delay: .2 }}
+          initial={{ opacity: 0, y:200 }}
+          whileInView={{ opacity: 1, y:0 }}
+          transition={{ duration: .5 }}
           viewport={{ once: true }}
           className={styles.about}>
           <div className={`${styles.header} head`}>

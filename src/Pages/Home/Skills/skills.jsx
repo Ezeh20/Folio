@@ -14,7 +14,8 @@ const variant = {
         x: 0,
         opacity: 1,
         transition: {
-            duration: .6
+            delay: .3,
+            duration: .3,
         }
     }
 }
@@ -44,10 +45,15 @@ const Skills = () => {
     return (
         <Container>
             <ContentContainer type={`about`}>
-                <section
+                <motion.section
                     className={styles.container}>
                     <p className='heading head'>Technologies and tools</p>
-                    <div className={styles.tools}>
+                    <motion.div
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ delay: .3, duration: .3, delayChildren: 2 }}
+                        viewport={{ once: true }}
+                        className={styles.tools}>
                         {
                             tools.map(tool => {
                                 const { id, icon, title } = tool
@@ -56,8 +62,8 @@ const Skills = () => {
                                         variants={id % 2 === 0 ? variantIconsEven : variantIconsOdd}
                                         initial='hidden'
                                         whileInView='show'
-                                        transition={{ duration: .2, delay: id * .1 }}
-                                        viewport={{once:true}}
+                                        transition={{ duration: .2, delay: id * .2, when: "afterParent" }}
+                                        viewport={{ once: true }}
                                         key={id} className={styles.tool}>
                                         <div>{icon}</div>
                                         <p className={styles.title}>{title}</p>
@@ -65,8 +71,8 @@ const Skills = () => {
                                 )
                             })
                         }
-                    </div>
-                </section>
+                    </motion.div>
+                </motion.section>
             </ContentContainer>
         </Container>
     )

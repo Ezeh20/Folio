@@ -17,7 +17,12 @@ const Experience = () => {
   return (
     <Container>
       <ContentContainer type='exp'>
-        <section id='experience' className={styles.exp}>
+        <motion.section
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: .5, }}
+          viewport={{ once: true }}
+          id='experience' className={styles.exp}>
           <div className={`lineStyle`}>
             <p className={`heading head`}><span className={`spans`}>02.</span>Experience</p>
             <Line />
@@ -59,18 +64,18 @@ const Experience = () => {
                         <p className={styles.title}>{title}</p>
                         <p className={styles.period}>{period}</p>
                       </div>
-                      {shalaye1 && shalaye1.length > 1 && <div className={styles.place}><GiParrotHead  className={styles.icn}/> <p>{shalaye1}</p></div>}
-                      {shalaye2 && shalaye2.length > 1 && <div className={styles.place}><GiParrotHead  className={styles.icn}/> <p>{shalaye2}</p></div>}
-                      {shalaye3 && shalaye3.length > 1 && <div className={styles.place}><GiParrotHead  className={styles.icn}/> <p>{shalaye3}</p></div>}
-                      {shalaye4 && shalaye4.length > 1 && <div className={styles.place}><GiParrotHead  className={styles.icn}/> <p>{shalaye4}</p></div>}
-                      {shalaye5 && shalaye5.length > 1 && <div className={styles.place}><GiParrotHead  className={styles.icn}/> <p>{shalaye5}</p></div>}
+                      {shalaye1 && shalaye1.length > 1 && <div className={styles.place}><GiParrotHead className={styles.icn} /> <p>{shalaye1}</p></div>}
+                      {shalaye2 && shalaye2.length > 1 && <div className={styles.place}><GiParrotHead className={styles.icn} /> <p>{shalaye2}</p></div>}
+                      {shalaye3 && shalaye3.length > 1 && <div className={styles.place}><GiParrotHead className={styles.icn} /> <p>{shalaye3}</p></div>}
+                      {shalaye4 && shalaye4.length > 1 && <div className={styles.place}><GiParrotHead className={styles.icn} /> <p>{shalaye4}</p></div>}
+                      {shalaye5 && shalaye5.length > 1 && <div className={styles.place}><GiParrotHead className={styles.icn} /> <p>{shalaye5}</p></div>}
                     </div>
                   }
                 </motion.div>
               </AnimatePresence>
             </main>
           </section>
-        </section>
+        </motion.section>
       </ContentContainer>
     </Container>
   )
