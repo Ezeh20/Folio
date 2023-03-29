@@ -50,7 +50,7 @@ const Navigation = () => {
                         <motion.img
                             initial={{ scale: 0, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
-                            transition={{ duration: .5, type: "spring" }}
+                            transition={{ delay: .5, duration: .5, type: "spring" }}
                             src="/public/logo.svg" alt="logo" className={styles.logo} />
                     </Link>
                     <div

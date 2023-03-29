@@ -1,4 +1,4 @@
-import { SiJavascript, SiEslint, SiFirebase, SiTailwindcss, SiGit, SiReact, SiVite, SiFigma, SiCss3, SiHtml5 } from "react-icons/si";
+import { SiJavascript, SiEslint, SiFirebase, SiTailwindcss, SiGit, SiReact, SiVite, SiFigma, SiCss3, SiHtml5, SiFramer } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 
 
@@ -37,6 +37,11 @@ const tools = [
         id: 7,
         icon: <SiReact />,
         title: `react`
+    },
+    {
+        id: 12,
+        icon: <SiFramer />,
+        title: `framer`
     },
     {
         id: 8,

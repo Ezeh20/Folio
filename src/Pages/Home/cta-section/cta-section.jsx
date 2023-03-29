@@ -26,7 +26,6 @@ const Cta = () => {
         <motion.div
             initial="hidden"
             animate="show"
-
             variants={variant}
             className={styles.cta}>
             <Container>

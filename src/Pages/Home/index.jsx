@@ -7,17 +7,23 @@ import Experience from './experience-section/experience'
 import Projects from './projects-section/projects'
 import styles from './index.module.scss'
 import Skills from './Skills/skills'
+import { motion } from 'framer-motion'
 
 const Main = () => {
     return (
-        <div className={styles.index}>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .5 }}
+            className={styles.index}>
             <Layout>
                 <Cta />
                 <About />
                 <Skills />
                 <Experience />
+                <Projects />
             </Layout>
-        </div>
+        </motion.div>
     )
 }
 
