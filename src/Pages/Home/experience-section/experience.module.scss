@@ -1,19 +1,27 @@
 @use '../../../scss/global/colors'as *;
+@use '../../../scss/utils/fonts'as *;
+@use '../../../scss/utils/functions'as fn;
 
 .exp {
     .myExp {
+        @media screen and (min-width:600px) {
+            display: flex;
+        }
+
         .nav {
             width: 100%;
             overflow: scroll;
             position: relative;
             padding-bottom: .6rem;
 
-
             .ul {
                 width: max-content;
                 display: flex;
-
                 position: relative;
+
+                @media screen and (min-width:600px) {
+                    flex-direction: column;
+                }
 
                 .selected {
                     background: #112240;
@@ -21,59 +29,128 @@
 
                     .underline {
                         width: 100%;
-                        height: 3px;
+                        height: fn.rem(3);
                         position: absolute;
                         bottom: -1px;
                         z-index: 1;
                         background: $secondary;
-                        border-radius: 5px;
+                        border-radius: fn.rem(5);
+
+                        @media screen and (min-width:600px) {
+                            height: 100%;
+                            margin-bottom: 3.5px;
+                            width: 4px;
+                            bottom: -4px;
+                            left: -.1rem;
+                        }
                     }
                 }
 
-                
-            li {
+            }
+
+            .ul>li {
                 display: flex;
                 width: max-content;
                 position: relative;
-                font-size: 14px;
+                font-size: fn.rem(16);
                 transition: all 500ms ease-in-out;
+
+                @media screen and (min-width:600px) {
+                    width: 100%;
+                }
 
                 .con {
                     padding: 1rem 1.2rem;
+                    font-family: $fontAlt;
                 }
 
                 &:hover {
                     background: #112240;
                     color: $secondary;
                     cursor: pointer;
-
                 }
             }
-
-            }
-
-
         }
 
         .nav::-webkit-scrollbar {
             display: inline-flex;
             width: 1%;
-            height: 10px;
+            height: fn.rem(10);
         }
+
         .nav::-webkit-scrollbar-thumb {
-            background:rgba(204, 214, 246, .3);
-            border-radius: 20px;
-            
-          }
+            background: rgba(204, 214, 246, .3);
+            border-radius: fn.rem(20);
+
+        }
 
         .ul::after {
             content: '';
             width: 100%;
-            height: .5px;
+            height: fn.rem(.5);
             bottom: 0;
             opacity: .5;
             position: absolute;
             background-color: $text;
+
+            @media screen and (min-width:600px) {
+                top: 0;
+                transform: rotate(90deg);
+                width: 28.15rem;
+                left: -14rem;
+            }
+        }
+
+        .main {
+            margin-block: 1rem;
+            height: fn.rem(650);
+
+            .animate {
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 1rem;
+                    background: #000;
+                    max-width: fn.rem(500);
+
+                    .xpHeader {
+                        margin-top: 1.2rem;
+
+                        .title {
+                            font-weight: 400;
+                            color: $heading;
+                            font-size: fn.rem(18);
+                        }
+
+                        .period {
+                            font-family: $fontAlt;
+                            font-size: fn.rem(14);
+                        }
+                    }
+
+                    .place {
+                        display: grid;
+                        grid-template-columns: max-content 1fr;
+                        gap: .9rem;
+                        padding-left: 1.5rem;
+                        align-items: start;
+
+                        .icn {
+                            margin-top: .35rem;
+                            color: $secondary;
+                            opacity: .8;
+                        }
+                    }
+
+                    .place p {
+                        font-size: fn.rem(14);
+
+                        @media screen and (min-width:769px) {
+                            font-size: fn.rem(15);
+                        }
+                    }
+                }
+            }
         }
     }
 }
