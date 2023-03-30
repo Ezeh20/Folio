@@ -19,7 +19,16 @@ const Projects = () => {
               <div className={styles.overlay} />
             </div>
             <div className={styles.prjDetails}>
-              <p>obi is a boy</p>
+              <p className={styles.prjName}>Project 1</p>
+              <p className={styles.projectDetails}>A project about nyash</p>
+              <div className={styles.toolsGrp}>
+                <div className={styles.tools}>
+                  <p>Js</p>
+                </div>
+                <div className={styles.links}>
+                  <p>github</p>
+                </div>
+              </div>
             </div>
           </section>
         </div>
