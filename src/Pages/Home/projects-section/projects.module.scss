@@ -1,14 +1,29 @@
 @use '../../../scss/global/colors'as *;
+@use '../../../scss/utils/functions'as fn;
 
 .main {
     margin-bottom: 5rem;
 
     .section {
         width: 100%;
-        height: 500px;
+        height: fn.rem(400);
         display: flex;
         flex-direction: column;
         position: relative;
+
+        @media screen and (min-width:769px) {
+            height: fn.rem(350);
+            &:hover {
+                cursor: pointer;
+
+                .prjScreenshot {
+                    .overlay {
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
 
 
         .prjScreenshot {
@@ -17,7 +32,13 @@
             position: absolute;
 
             @media screen and (min-width:769px) {
-              height: 60%;
+                height: 60%;
+                top: 15%;
+            }
+
+            @media screen and (min-width:1200px) {
+                height: 100%;
+                top: 0;
             }
 
 
@@ -30,8 +51,6 @@
                 @media screen and (min-width:769px) {
                     width: 60%;
                     height: 100%;
-                    top: 20%;
-                    max-height: 500px;
                 }
             }
 
@@ -42,11 +61,11 @@
                 background: #1b424fff;
                 opacity: .92;
                 top: 0;
+                transition: all 500ms ease-in-out;
 
                 @media screen and (min-width:769px) {
                     width: 60%;
-                    height: 60%;
-                    top: 20%;
+
                 }
             }
         }
@@ -56,24 +75,40 @@
             position: absolute;
             right: 0;
             width: 100%;
-            height: max-content;
-            z-index: 5;
+            height: 100%;
             background: transparent;
             display: flex;
             flex-direction: column;
-            padding: 2rem 1rem;
-            row-gap: 2rem;
+            padding-inline: 1rem;
+            row-gap: 1rem;
+            justify-content: space-evenly;
 
             @media screen and (min-width:769px) {
                 width: 60%;
                 height: 100%;
-
-                background: rgba(0, 0, 0, 1);
+                text-align: right;
+                padding: 0;
             }
 
             .prjName {
                 font-size: 20px;
                 color: $heading;
+            }
+
+            .projectDetails {
+                
+                font-size: fn.rem(12);
+
+                @media screen and (min-width:425px) {
+                    font-size: fn.rem(14);
+                }
+
+                @media screen and (min-width:769px) {
+                    background: #112240;
+                    border-radius: 5px;
+                    padding: 2rem;
+                    
+                }
             }
         }
     }

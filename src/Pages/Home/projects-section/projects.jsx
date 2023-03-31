@@ -15,12 +15,12 @@ const Projects = () => {
           </div>
           <section className={styles.section} id='work'>
             <div className={styles.prjScreenshot}>
-              <img src="/public/img/ceejay.jpg" alt="img" className={styles.prj} />
+              <img src="/public/img/todo profile.png" alt="img" className={styles.prj} />
               <div className={styles.overlay} />
             </div>
             <div className={styles.prjDetails}>
               <p className={styles.prjName}>Project 1</p>
-              <p className={styles.projectDetails}>A project about nyash</p>
+              <p className={styles.projectDetails}>A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash  A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash A project about nyash  A project about nyash A project about nyash A project about nyash  </p>
               <div className={styles.toolsGrp}>
                 <div className={styles.tools}>
                   <p>Js</p>
