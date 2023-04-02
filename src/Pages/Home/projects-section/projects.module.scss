@@ -103,6 +103,7 @@
             padding-inline: 1rem;
             row-gap: 1rem;
             justify-content: space-evenly;
+            color: $text;
 
             @media screen and (min-width:769px) {
                 width: 55%;
@@ -162,6 +163,7 @@
                     }
 
                     .link {
+                        color: $text;
                         &:hover {
                             cursor: pointer;
                             color: $secondary;

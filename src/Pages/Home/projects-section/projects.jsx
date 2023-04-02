@@ -5,6 +5,7 @@ import Line from '../../../Components/Line/line'
 import styles from './projects.module.scss'
 import works from './data'
 import Button from '../../../Components/Button/button'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   const [more, setMore] = useState(4)
@@ -18,9 +19,10 @@ const Projects = () => {
           </div>
           {
             works.filter((_, idx) => idx < more).map(itm => {
-              const { id, img, projectName, projectDescription, tools, github, link } = itm
+              const { id, img, projectName, projectDescription, tools, github, link, liveLink, githubLink } = itm
               return (
-                <section className={styles.section} id='work'>
+                <Link to={liveLink} target='_blank' className={styles.section} id='work'>
+
                   <div className={id % 2 !== 0 ? styles.prjScreenshot : `${`${styles.prjScreenshotAlt} ${styles.prjScreenshot}`}`}>
                     <img src={img} alt="img" className={styles.prj} />
                     <div className={styles.overlay} />
@@ -37,18 +39,18 @@ const Projects = () => {
                         })}
                       </div>
                       <div className={styles.links}>
-                        <p className={styles.link}>{github}</p>
-                        <p className={styles.link}>{link}</p>
+                        <Link to={githubLink} target='_blank' className={styles.link}>{github}</Link>
+                        <Link to={liveLink} target='_blank' className={styles.link}>{link}</Link>
                       </div>
                     </div>
                   </div>
-                </section>
+                </Link>
               )
             })
           }
           {
             more >= 8 ? '' : <div className={styles.showMore}>
-              <Button btnType='more' onClick={() => setMore(8)}>Show more</Button>
+              <Button btnType='more' onClick={() => setMore(count => count + 2)}>Show more</Button>
             </div>
           }
         </div>

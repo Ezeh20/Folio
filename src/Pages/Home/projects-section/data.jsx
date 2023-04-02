@@ -10,6 +10,8 @@ const works = [
         start time and end time.There is also an xp system where each completed task grants 10 points which then unlocks awards if the needed 
         points are enough.`,
         tools: ['React', 'Sass', 'Framer', 'Firebase'],
+        githubLink: 'https://github.com/Ezeh20/Task-master',
+        liveLink: 'https://task-master-02.netlify.app/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -21,6 +23,8 @@ const works = [
         fill in the required information and must select between two variations [mercy , wickedness] then an agreement will be generated based
         on the filled form. I learnt how to utilize localStorage and also how to make use of user's data collected through a form.`,
         tools: ['React', 'Sass'],
+        githubLink: 'https://github.com/Ezeh20/Loan_agreement_generator',
+        liveLink: 'https://ezeh20.github.io/Loan_agreement_generator/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -32,6 +36,8 @@ const works = [
         I hard coded 7 categories which has 8 items each and the 'student's are viewing section' which has 15 items when i would have just created the elements
         by manipulating the dom by feeding on the needed object data. Using react later on made this very clear to me.`,
         tools: ['Html', 'Css', 'JavaScript'],
+        githubLink: 'https://github.com/Ezeh20/udemy--clone',
+        liveLink: 'https://ezeh20.github.io/udemy--clone/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -42,6 +48,10 @@ const works = [
         projectDescription: `E-mart is an ecommerce. This project thought me the essence of lifting state up, state management using the context api, fetching 
         data from firebase, routing in react and seeing everything as a component. The products are fetched from firebase instead of living in the client side.`,
         tools: ['React', 'Sass', 'Firebase'],
+        githubLink: 'https://github.com/Ezeh20/udemy--clone',
+        liveLink: 'https://ezeh20.github.io/udemy--clone/',
+        githubLink: 'https://github.com/Ezeh20/E-mart',
+        liveLink: 'https://ezeh20.github.io/E-mart/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -53,6 +63,8 @@ const works = [
         be found in other job postings, clicking a tag adds that tag in an array where the forEach array method loops through
         each element in that array then the looped element will finally be used to filter in job postings which have matching tags using the includes method. `,
         tools: ['React', 'Sass', 'Framer', 'JSON'],
+        githubLink: 'https://github.com/Ezeh20/Job-listings-with-filtering',
+        liveLink: 'https://jobs-listing.netlify.app/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -64,6 +76,8 @@ const works = [
         then asked to produce a pixel perfect implementation which i did well, LazyLoading images when the are in view is one concept i came across while performing this
         task.`,
         tools: ['React', 'Css'],
+        githubLink: 'https://github.com/Ezeh20/Metabnb-hng',
+        liveLink: 'https://ezeh20.github.io/Metabnb-hng/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -73,6 +87,8 @@ const works = [
         projectName: 'Space-tourism',
         projectDescription: `Space-tourism is a muilt page site, A figma file was provided and also the needed assets including a style guilde. `,
         tools: ['React', 'Sass', 'Framer'],
+        githubLink: 'https://github.com/Ezeh20/space-tourism',
+        liveLink: 'https://space-travel-97.netlify.app/',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -83,6 +99,8 @@ const works = [
         projectDescription: `This project uses the REST countries api to display 250 countries data including their flags. I got to know about the
         ability to pass state using the useNavigate hook provided by react router 6 which made it possible to navigate between a country and it's borders.`,
         tools: ['React', 'Sass', 'API'],
+        githubLink: 'https://github.com/Ezeh20/Rest-api-frontend-mentor',
+        liveLink: 'https://ezeh-world-app.netlify.app/',
         github: <FiGithub />,
         link: <FiLink />
     }
