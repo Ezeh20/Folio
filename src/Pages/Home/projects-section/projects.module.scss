@@ -1,8 +1,15 @@
 @use '../../../scss/global/colors'as *;
 @use '../../../scss/utils/functions'as fn;
+@use '../../../scss/utils/fonts'as *;
 
 .main {
     margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    @media screen and (min-width:769px) {
+        row-gap: 8rem;
+    }
 
     .section {
         width: 100%;
@@ -10,9 +17,11 @@
         display: flex;
         flex-direction: column;
         position: relative;
+      
 
         @media screen and (min-width:769px) {
             height: fn.rem(350);
+
             &:hover {
                 cursor: pointer;
 
@@ -66,7 +75,18 @@
                 @media screen and (min-width:769px) {
                     width: 60%;
                     background: #1d4753;
+                    opacity: .85;
                 }
+            }
+        }
+
+        .prjScreenshotAlt {
+            .prj {
+                right: 0;
+            }
+
+            .overlay {
+                right: 0;
             }
         }
 
@@ -92,11 +112,11 @@
 
             .prjName {
                 font-size: 20px;
-                color: $heading;
+                color: $secondary;
             }
 
             .projectDetails {
-                
+
                 font-size: fn.rem(12);
 
                 @media screen and (min-width:425px) {
@@ -105,12 +125,64 @@
 
                 @media screen and (min-width:769px) {
                     background: #112240;
-                    box-shadow: 0px 1px 35px 31px rgba(0,0,0,0);
--webkit-box-shadow: 0px 1px 35px 31px rgba(0,0,0,0);
--moz-box-shadow: 0px 1px 35px 31px rgba(0,0,0,0);
+                    box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
+                    -webkit-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
+                    -moz-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
                     border-radius: 5px;
                     padding: 2rem;
-                    
+                    text-align: left;
+                }
+            }
+
+            .toolsGrp {
+                display: flex;
+                flex-direction: column;
+                row-gap: 1rem;
+
+                .tools {
+                    display: flex;
+                    gap: .8rem;
+                    font-size: fn.rem(14);
+                    font-family: $fontAlt;
+
+                    @media screen and (min-width:769px) {
+                        justify-content: end;
+                        font-size: fn.rem(16);
+                    }
+                }
+
+                .links {
+                    display: flex;
+                    gap: 1rem;
+
+                    @media screen and (min-width:769px) {
+                        justify-content: end;
+                    }
+
+                    .link {
+                        &:hover {
+                            cursor: pointer;
+                            color: $secondary;
+                        }
+                    }
+                }
+            }
+        }
+
+        .prjDetailsAlt {
+            left: 0;
+
+            @media screen and (min-width:769px) {
+                text-align: left;
+            }
+
+            .toolsGrp {
+                .tools {
+                    justify-content: start;
+                }
+
+                .links {
+                    justify-content: start;
                 }
             }
         }
