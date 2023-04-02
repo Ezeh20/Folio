@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../../../Components/Container/container'
 import ContentContainer from '../../../Components/ContainerContents/container'
 import Line from '../../../Components/Line/line'
 import styles from './projects.module.scss'
 import works from './data'
+import Button from '../../../Components/Button/button'
 
 const Projects = () => {
+  const [more, setMore] = useState(4)
   return (
     <Container>
       <ContentContainer>
@@ -15,7 +17,7 @@ const Projects = () => {
             <Line />
           </div>
           {
-            works.map(itm => {
+            works.filter((_, idx) => idx < more).map(itm => {
               const { id, img, projectName, projectDescription, tools, github, link } = itm
               return (
                 <section className={styles.section} id='work'>
@@ -43,6 +45,11 @@ const Projects = () => {
                 </section>
               )
             })
+          }
+          {
+            more >= 8 ? '' : <div className={styles.showMore}>
+              <Button btnType='more' onClick={() => setMore(8)}>Show more</Button>
+            </div>
           }
         </div>
       </ContentContainer>

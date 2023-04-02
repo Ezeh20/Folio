@@ -2,7 +2,8 @@ import React from 'react'
 import styles from './button.module.scss'
 const buttonType = {
     default: 'default',
-    cta: 'cta'
+    cta: 'cta',
+    more:'more'
 }
 
 const Button = ({ children, onClick, btnType }) => {

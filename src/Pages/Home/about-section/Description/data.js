@@ -4,7 +4,7 @@ const aboutMe = {
     para: `I started with how the internet works, the fundamentals of web development then moved to frameworks and other tools such as React, tailwind, sass etc. Having a foundation in Information technology helped me
     understand the relationship between the internet and the web.`,
     para2: `Having spent months on my own trying to graps these things, people on social platforms advised those self learning to join 
-    communities and it really helped because i improved alot after going through the zuri training and HNG 9 internship programs which took 7 months in total.`,
+    communities and it really helped because i improved alot after going through the zuri training and HNG 9 internship programmes which took 7 months in total.`,
     final: `I'm still learning and also seeking avenues to improve my ability and experience in this field.`
 
 }
