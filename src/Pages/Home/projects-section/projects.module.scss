@@ -6,194 +6,204 @@
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
-    row-gap: 5rem;
 
-    @media screen and (min-width:769px) {
-        row-gap: 8rem;
-    }
-
-    .section {
-        width: 100%;
-        height: fn.rem(400);
+    .divide {
         display: flex;
         flex-direction: column;
-        position: relative;
-
+        row-gap: 2rem;
 
         @media screen and (min-width:769px) {
-            height: fn.rem(350);
-
-            &:hover {
-                cursor: pointer;
-
-                .prjScreenshot {
-                    .overlay {
-                        opacity: 0;
-                        cursor: pointer;
-                    }
-                }
-            }
+            row-gap: 8rem;
         }
-
-
-        .prjScreenshot {
+        .section {
             width: 100%;
-            height: 100%;
-            position: absolute;
-
-            @media screen and (min-width:769px) {
-                height: 60%;
-                top: 15%;
-            }
-
-            @media screen and (min-width:1200px) {
-                height: 100%;
-                top: 0;
-            }
-
-
-            .prj {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                object-fit: cover;
-
-                @media screen and (min-width:769px) {
-                    width: 60%;
-                    height: 100%;
-                }
-            }
-
-            .overlay {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                background: #0b1c31ff;
-                opacity: .92;
-                top: 0;
-                transition: all 500ms ease-in-out;
-
-                @media screen and (min-width:769px) {
-                    width: 60%;
-                    background: #1d4753;
-                    opacity: .9;
-                }
-            }
-        }
-
-        .prjScreenshotAlt {
-            .prj {
-                right: 0;
-            }
-
-            .overlay {
-                right: 0;
-            }
-        }
-
-        .prjDetails {
-            background: transparent;
-            position: absolute;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
+            height: fn.rem(400);
             display: flex;
             flex-direction: column;
-            padding-inline: 1rem;
-            row-gap: 1rem;
-            justify-content: space-evenly;
-            color: $text;
+            position: relative;
+
+
 
             @media screen and (min-width:769px) {
-                width: 55%;
-                height: 100%;
-                text-align: right;
-                padding: 0;
-            }
+                height: fn.rem(350);
 
-            .prjName {
-                font-size: 20px;
-                color: $secondary;
-                opacity: .8;
-            }
+                &:hover {
+                    cursor: pointer;
 
-            .projectDetails {
-
-                font-size: fn.rem(12);
-
-                @media screen and (min-width:425px) {
-                    font-size: fn.rem(14);
-                }
-
-                @media screen and (min-width:769px) {
-                    background: #112240;
-                    box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
-                    -webkit-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
-                    -moz-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
-                    border-radius: 5px;
-                    padding: 2rem;
-                    text-align: left;
-                }
-            }
-
-            .toolsGrp {
-                display: flex;
-                flex-direction: column;
-                row-gap: 1rem;
-
-                .tools {
-                    display: flex;
-                    gap: .8rem;
-                    font-size: fn.rem(14);
-                    font-family: $fontAlt;
-
-                    @media screen and (min-width:769px) {
-                        justify-content: end;
-                        font-size: fn.rem(16);
-                    }
-                }
-
-                .links {
-                    display: flex;
-                    gap: 1rem;
-
-                    @media screen and (min-width:769px) {
-                        justify-content: end;
-                    }
-
-                    .link {
-                        color: $text;
-                        &:hover {
+                    .prjScreenshot {
+                        .overlay {
+                            opacity: 0;
                             cursor: pointer;
-                            color: $secondary;
                         }
                     }
                 }
             }
-        }
 
-        .prjDetailsAlt {
-            left: 0;
 
-            @media screen and (min-width:769px) {
-                text-align: left;
-            }
+            .prjScreenshot {
+                width: 100%;
+                height: 100%;
+                position: absolute;
 
-            .toolsGrp {
-                .tools {
-                    justify-content: start;
+                @media screen and (min-width:769px) {
+                    height: 60%;
+                    top: 15%;
                 }
 
-                .links {
-                    justify-content: start;
+                @media screen and (min-width:1200px) {
+                    height: 100%;
+                    top: 0;
+                }
+
+
+                .prj {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    object-fit: cover;
+
+                    @media screen and (min-width:769px) {
+                        width: 60%;
+                        height: 100%;
+                    }
+                }
+
+                .overlay {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background: #0b1c31ff;
+                    opacity: .92;
+                    top: 0;
+                    transition: all 500ms ease-in-out;
+
+                    @media screen and (min-width:769px) {
+                        width: 60%;
+                        background: #1d4753;
+                        opacity: .9;
+                    }
+                }
+            }
+
+            .prjScreenshotAlt {
+                .prj {
+                    right: 0;
+                }
+
+                .overlay {
+                    right: 0;
+                }
+            }
+
+            .prjDetails {
+                background: transparent;
+                position: absolute;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                display: flex;
+                flex-direction: column;
+                padding-inline: 1rem;
+                row-gap: 1rem;
+                justify-content: space-evenly;
+                color: $text;
+
+                @media screen and (min-width:769px) {
+                    width: 55%;
+                    height: 100%;
+                    text-align: right;
+                    padding: 0;
+                }
+
+                .prjName {
+                    font-size: 20px;
+                    color: $secondary;
+                    opacity: .8;
+                }
+
+                .projectDetails {
+
+                    font-size: fn.rem(12);
+
+                    @media screen and (min-width:425px) {
+                        font-size: fn.rem(14);
+                    }
+
+                    @media screen and (min-width:769px) {
+                        background: #112240;
+                        box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
+                        -webkit-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
+                        -moz-box-shadow: 0px 1px 35px 31px rgba(0, 0, 0, 0);
+                        border-radius: 5px;
+                        padding: 2rem;
+                        text-align: left;
+                    }
+                }
+
+                .toolsGrp {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 1rem;
+
+                    .tools {
+                        display: flex;
+                        gap: .8rem;
+                        font-size: fn.rem(15);
+                        color: $secondary;
+                        font-weight: 300;
+                        opacity: .9;
+                        
+
+                        @media screen and (min-width:769px) {
+                            justify-content: end;
+                            
+                        }
+                    }
+
+                    .links {
+                        display: flex;
+                        gap: 1.7rem;
+                        font-size: fn.rem(20);
+
+                        @media screen and (min-width:769px) {
+                            justify-content: end;
+                        }
+
+                        .link {
+                            color: $text;
+
+                            &:hover {
+                                cursor: pointer;
+                                color: $secondary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .prjDetailsAlt {
+                left: 0;
+
+                @media screen and (min-width:769px) {
+                    text-align: left;
+                }
+
+                .toolsGrp {
+                    .tools {
+                        justify-content: start;
+                    }
+
+                    .links {
+                        justify-content: start;
+                    }
                 }
             }
         }
-    }
 
-    .showMore {
-        display: flex;
-        justify-content: center;
+        .showMore {
+            display: flex;
+            justify-content: center;
+        }
     }
 }

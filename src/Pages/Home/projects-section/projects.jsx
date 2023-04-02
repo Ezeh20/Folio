@@ -13,46 +13,47 @@ const Projects = () => {
     <Container>
       <ContentContainer>
         <div className={styles.main}>
-          <div className='lineStyle'>
-            <p className={`heading head`}><span className='spans'>03.</span>Work</p>
-            <Line />
-          </div>
-          {
-            works.filter((_, idx) => idx < more).map(itm => {
-              const { id, img, projectName, projectDescription, tools, github, link, liveLink, githubLink } = itm
-              return (
-                <Link to={liveLink} target='_blank' className={styles.section} id='work'>
-
-                  <div className={id % 2 !== 0 ? styles.prjScreenshot : `${`${styles.prjScreenshotAlt} ${styles.prjScreenshot}`}`}>
-                    <img src={img} alt="img" className={styles.prj} />
-                    <div className={styles.overlay} />
-                  </div>
-                  <div className={id % 2 !== 0 ? styles.prjDetails : `${`${styles.prjDetailsAlt} ${styles.prjDetails}`}`}>
-                    <p className={styles.prjName}>{projectName}</p>
-                    <p className={styles.projectDetails}>{projectDescription}</p>
-                    <div className={styles.toolsGrp}>
-                      <div className={styles.tools}>
-                        {tools.map(tool => {
-                          return (
-                            <div>{tool}</div>
-                          )
-                        })}
-                      </div>
-                      <div className={styles.links}>
-                        <Link to={githubLink} target='_blank' className={styles.link}>{github}</Link>
-                        <Link to={liveLink} target='_blank' className={styles.link}>{link}</Link>
+          <div className={styles.divide}>
+            <div className='lineStyle'>
+              <p className={`heading head`}><span className='spans'>03.</span>Work</p>
+              <Line />
+            </div>
+            {
+              works.filter((_, idx) => idx < more).map(itm => {
+                const { id, img, projectName, projectDescription, tools, github, link, liveLink, githubLink } = itm
+                return (
+                  <div className={styles.section} key={id} id='work'>
+                    <div className={id % 2 !== 0 ? styles.prjScreenshot : `${`${styles.prjScreenshotAlt} ${styles.prjScreenshot}`}`}>
+                      <img src={img} alt="img" className={styles.prj} />
+                      <div className={styles.overlay} />
+                    </div>
+                    <div className={id % 2 !== 0 ? styles.prjDetails : `${`${styles.prjDetailsAlt} ${styles.prjDetails}`}`}>
+                      <p className={styles.prjName}>{projectName}</p>
+                      <p className={styles.projectDetails}>{projectDescription}</p>
+                      <div className={styles.toolsGrp}>
+                        <div className={styles.tools}>
+                          {tools.map((tool, idx) => {
+                            return (
+                              <div key={idx}>{tool}</div>
+                            )
+                          })}
+                        </div>
+                        <div className={styles.links}>
+                          <Link to={githubLink} target='_blank' className={styles.link}>{github}</Link>
+                          <Link to={liveLink} target='_blank' className={styles.link}>{link}</Link>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </Link>
-              )
-            })
-          }
-          {
-            more >= 8 ? '' : <div className={styles.showMore}>
-              <Button btnType='more' onClick={() => setMore(count => count + 2)}>Show more</Button>
-            </div>
-          }
+                )
+              })
+            }
+            {
+              more >= 8 ? '' : <div className={styles.showMore}>
+                <Button btnType='more' onClick={() => setMore(count => count + 2)}>Show more</Button>
+              </div>
+            }
+          </div>
         </div>
       </ContentContainer>
     </Container>

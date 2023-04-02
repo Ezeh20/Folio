@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Button from '../../../../Components/Button/button'
 import Socials from '../Socials/socials'
 import styles from './content.module.scss'
 import content from './data'
 const { greeting, name, details, role, cta } = content
+
 const variant = {
   hidden: {
     opacity: 0,
@@ -58,6 +59,7 @@ const contentTop = {
 }
 
 const Content = () => {
+
   return (
     <motion.div
       initial='hidden'
@@ -84,7 +86,7 @@ const Content = () => {
           animate='btn'
           variants={contentTop}
           className={styles.btn}>
-          <Button btnType='cta'>{cta}</Button>
+          <Button btnType='cta' onClick={() => window.location.href='mailto:chijioke1ezeh@gmail.com'}>{cta}</Button>
         </motion.div>
       </div>
       <Socials type='small' />
