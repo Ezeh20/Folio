@@ -39,10 +39,8 @@ const works = [
         id: 4,
         img: 'https://i.ibb.co/c6pCN8K/e-mart.png',
         projectName: 'E-mart',
-        projectDescription: `This is a CRUD application which makes use of firebase as a backend. Users must login or signup to cre
-        ate a task. When ticked as 'completed', that task will be saved in a completed tasks collection which shows the task, taskId
-        start time and end time.There is also an xp system where each completed task grants 10 points which then unlocks awards if the needed 
-        points are enough.`,
+        projectDescription: `E-mart is an ecommerce. This project thought me the essence of lifting state up, state management using the context api, fetching 
+        data from firebase and routing in react. The products are fetched from firebase instead of living in the client side`,
         tools: ['React', 'Sass', 'Firebase'],
         github: <FiGithub />,
         link: <FiLink />
