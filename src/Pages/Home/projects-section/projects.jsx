@@ -6,13 +6,40 @@ import styles from './projects.module.scss'
 import works from './data'
 import Button from '../../../Components/Button/button'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
+const variant = {
+  hidden: {
+    x: -200,
+    opacity: 0
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1.5
+    }
+  }
+}
+const variantKids = {
+  hidden: {
+    x: -200,
+  },
+  show: {
+    x: 0,
+  }
+}
 
 const Projects = () => {
   const [more, setMore] = useState(4)
   return (
     <Container>
       <ContentContainer>
-        <div className={styles.main}>
+        <motion.section
+          initial='hidden'
+          whileInView='show'
+          variants={variant}
+          id='work' className={styles.main}>
           <div className={styles.divide}>
             <div className='lineStyle'>
               <p className={`heading head`}><span className='spans'>03.</span>Work</p>
@@ -22,7 +49,8 @@ const Projects = () => {
               works.filter((_, idx) => idx < more).map(itm => {
                 const { id, img, projectName, projectDescription, tools, github, link, liveLink, githubLink } = itm
                 return (
-                  <div className={styles.section} key={id} id='work'>
+                  <motion.div
+                    className={styles.section} key={id} >
                     <div className={id % 2 !== 0 ? styles.prjScreenshot : `${`${styles.prjScreenshotAlt} ${styles.prjScreenshot}`}`}>
                       <img src={img} alt="img" className={styles.prj} />
                       <div className={styles.overlay} />
@@ -44,7 +72,7 @@ const Projects = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 )
               })
             }
@@ -54,7 +82,7 @@ const Projects = () => {
               </div>
             }
           </div>
-        </div>
+        </motion.section>
       </ContentContainer>
     </Container>
   )

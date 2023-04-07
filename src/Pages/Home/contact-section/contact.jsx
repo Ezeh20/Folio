@@ -16,7 +16,7 @@ const Contact = () => {
                             <p className={styles.GodAbeg}>I'm currently open to any opportunity that may come my way be it paid or unpaid. Kindly reach out</p>
                         </div>
                         <div className={styles.btn}>
-                            <Button btnType={`contact`}>Contact me</Button>
+                            <Button btnType={`contact`} onClick={() => window.location.href = 'mailto:chijioke1ezeh@gmail.com'}>Contact me</Button>
                         </div>
                     </div>
                 </section>
