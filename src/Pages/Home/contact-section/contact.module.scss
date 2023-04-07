@@ -1,0 +1,43 @@
+@use '../../../scss/global/colors'as *;
+
+.head {
+    display: flex;
+    flex-direction: column;
+    margin-block: 2rem;
+    @media screen and (min-width:769px) {
+        margin-block: 8rem;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+
+        .contact {
+            color: $secondary;
+        }
+
+        .reach {
+            @media screen and (min-width:769px) {
+                font-size: 45px;
+            }
+        }
+
+        .GodAbeg {
+            max-width: 550px;
+        }
+
+        .shalaye {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .btn {
+            justify-self: center;
+            align-self: center;
+            margin-block: 1.5rem;
+        }
+    }
+}

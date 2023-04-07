@@ -3,7 +3,8 @@ import styles from './button.module.scss'
 const buttonType = {
     default: 'default',
     cta: 'cta',
-    more:'more'
+    more:'more',
+    contact:'contact'
 }
 
 const Button = ({ children, onClick, btnType }) => {

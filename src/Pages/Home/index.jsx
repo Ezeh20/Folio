@@ -22,6 +22,7 @@ const Main = () => {
                 <Skills />
                 <Experience />
                 <Projects />
+                <Contact/>
             </Layout>
         </motion.div>
     )
