@@ -5,6 +5,7 @@ import Socials from '../Socials/socials'
 import styles from './content.module.scss'
 import content from './data'
 const { greeting, name, details, role, cta } = content
+import Cta from '../../../../assets/cta.svg'
 
 const variant = {
   hidden: {
@@ -86,7 +87,7 @@ const Content = () => {
           animate='btn'
           variants={contentTop}
           className={styles.btn}>
-          <Button btnType='cta' onClick={() => window.location.href='mailto:chijioke1ezeh@gmail.com'}>{cta}</Button>
+          <Button btnType='cta' onClick={() => window.location.href = 'mailto:chijioke1ezeh@gmail.com'}>{cta}</Button>
         </motion.div>
       </div>
       <Socials type='small' />
@@ -95,7 +96,7 @@ const Content = () => {
         animate='img'
         variants={contentTop}
         className={styles.imgCta}>
-        <img src="/public/img/cta.svg" alt="cta" className={styles.ctaImg} />
+        <img src={Cta} alt="cta" className={styles.ctaImg} />
       </motion.div>
     </motion.div>
   )

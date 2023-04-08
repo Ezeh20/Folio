@@ -5,6 +5,7 @@ import styles from './navigation.module.scss'
 import { motion } from "framer-motion"
 import Button from '../Button/button'
 import { HashLink as Link } from 'react-router-hash-link'
+import logo from '../../assets/logo.svg'
 
 
 const Navigation = () => {
@@ -14,9 +15,11 @@ const Navigation = () => {
         let handler = () => {
             setToggle(false)
         }
+        document.body.style.overflow = toggle ? 'hidden' : ''
         document.addEventListener("mousedown", handler)
         return () => document.removeEventListener("mousedown", handler)
-    })
+    }, [toggle])
+
     const listsVariant = {
         hidden: {
             x: '100%',
@@ -52,7 +55,7 @@ const Navigation = () => {
                             initial={{ scale: 0, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             transition={{ delay: .5, duration: .5, type: "spring" }}
-                            src="/public/logo.svg" alt="logo" className={styles.logo} />
+                            src={logo} alt="logo" className={styles.logo} />
                     </Link>
                     <div
                         className={styles.menuShow}>
