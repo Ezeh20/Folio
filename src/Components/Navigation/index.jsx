@@ -72,7 +72,8 @@ const Navigation = () => {
                                     return (
                                         <motion.li
                                             variants={listVariant}
-                                            transition={{ duration: 1, delay: id * .35, type: "spring" }}
+                                            viewport={{ once: true }}
+                                            transition={{ duration: 1, delay: id * .35, type : "tween" }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} smooth className={styles.navi}>{text}</Link>
                                         </motion.li>
