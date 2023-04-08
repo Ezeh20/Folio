@@ -21,14 +21,6 @@ const variant = {
     }
   }
 }
-const variantKids = {
-  hidden: {
-    x: -200,
-  },
-  show: {
-    x: 0,
-  }
-}
 
 const Projects = () => {
   const [more, setMore] = useState(4)
@@ -38,6 +30,7 @@ const Projects = () => {
         <motion.section
           initial='hidden'
           whileInView='show'
+          viewport={{ once: true }}
           variants={variant}
           id='work' className={styles.main}>
           <div className={styles.divide}>

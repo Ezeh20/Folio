@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import Button from '../Button/button'
 import { HashLink as Link } from 'react-router-hash-link'
 
+
 const Navigation = () => {
     const [toggle, setToggle] = useState(false)
 
@@ -75,7 +76,10 @@ const Navigation = () => {
                                     )
                                 })
                             }
-                            <Button>Resume</Button>
+
+                            <a href='https://drive.google.com/uc?export=download&id=1MeUgo_hsGQ2MRu9K2F48PcTmkN4uVsZd' rel="noopener noreferrer" download='Chijioke-resume.pdf'>
+                                <Button>Resume</Button>
+                            </a>
                         </motion.ul>
                     </div>
                     <div className={styles.buger} onClick={() => setToggle(!toggle)}>
