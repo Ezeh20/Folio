@@ -81,7 +81,7 @@ const Navigation = () => {
                                 })
                             }
 
-                            <a href='https://drive.google.com/uc?export=download&id=1MeUgo_hsGQ2MRu9K2F48PcTmkN4uVsZd' rel="noopener noreferrer" download='Chijioke-resume.pdf'>
+                            <a href='https://drive.google.com/uc?export=download&id=1V7xDv1U2LVnDHJWz2FEWjMOZ_7oMlTC2' rel="noopener noreferrer" download='Chijioke-resume.pdf'>
                                 <Button>Resume</Button>
                             </a>
                         </motion.ul>
