@@ -73,7 +73,7 @@ const Navigation = () => {
                                         <motion.li
                                             variants={listVariant}
                                             viewport={{ once: true }}
-                                            transition={{ duration: 1, delay: id * .35, type : "tween" }}
+                                            transition={{ duration: .3, delay: id * .3 }}
                                             className={styles.list} key={id}>
                                             <span>{number}</span>  <Link to={to} smooth className={styles.navi}>{text}</Link>
                                         </motion.li>
@@ -87,8 +87,7 @@ const Navigation = () => {
                         </motion.ul>
                     </div>
                     <div className={styles.buger} onClick={() => setToggle(!toggle)}>
-                        <div className={!toggle ? styles.line1 : `${`${styles.line1} ${styles.line1alt}`}`} />
-                        <div className={!toggle ? styles.line2 : `${`${styles.line2} ${styles.line2alt}`}`} />
+                        <div className={!toggle ? styles.line1 : `${`${styles.line1} ${styles.line1alt}`}`}  />
                         <div className={!toggle ? styles.line3 : `${`${styles.line3} ${styles.line3alt}`}`} />
                     </div>
                 </nav>

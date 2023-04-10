@@ -15,7 +15,7 @@
     padding-block: 2rem;
     top: 0;
     overflow: hidden;
-    z-index: 100;
+    z-index: 30;
 
     .nav {
         display: flex;
@@ -24,7 +24,7 @@
 
         .logoContainer {
             .logo {
-                width: fn.rem(45);
+                width: fn.rem(55);
 
                 &:hover {
                     cursor: pointer;
@@ -56,7 +56,7 @@
                 display: flex;
                 column-gap: 2rem;
                 align-items: center;
-                transition: all 300ms ease-out;
+                transition: all 200ms linear;
 
                 @media screen and (max-width:768px) {
                     position: fixed;
@@ -125,14 +125,16 @@
             row-gap: fn.rem(7.8);
             width: max-content;
             align-items: flex-end;
-            transition: all .5s ease-in-out;
+            padding: .5rem;
+
+
 
             .line1 {
-                width: fn.rem(35);
+                width: fn.rem(40);
                 height: fn.rem(2);
-                border-radius: 50%;
                 background-color: $secondary;
-                transition: all .5s ease-in-out;
+                z-index: 0;
+                transition: all .25s ease-in-out;
             }
 
             .line2 {
@@ -141,31 +143,59 @@
             }
 
             .line3 {
-                @extend.line1;
-                width: fn.rem(15);
-                transition: all .5s ease-in-out;
+                height: fn.rem(2);
+                background-color: $secondary;
+                width: fn.rem(20);
+                transition: all .25s ease-in-out;
             }
 
             .line1alt {
-                width: fn.rem(30);
-                transform: rotate(-45deg);
-                transform-origin: 75% 100%;
+                width: fn.rem(40);
+                animation: alt1 300ms ease-in-out forwards;
+
             }
 
             .line2alt {
                 display: none;
-                transition: all .5s ease-in-out;
             }
 
             .line3alt {
-                width: fn.rem(30);
-                transform-origin: 70% 100%;
-                transform: rotate(45deg);
+                width: fn.rem(40);
+                animation: alt2 300ms ease-in-out forwards;
+
             }
 
             @media screen and (min-width:769px) {
                 display: none;
             }
+
+            @keyframes alt1 {
+               
+
+                100% {
+                    transform: rotate(-45deg);
+                    transform-origin: 75% 100%;
+                }
+            }
+
+            @keyframes alt2 {
+             
+
+                100% {
+
+                    transform-origin: 70% 100%;
+                    transform: rotate(45deg);
+                }
+            }
         }
     }
 }
+
+/*
+transform: rotate(-45deg);
+transform-origin: 75% 100%;
+
+transform-origin: 70% 100%;
+                transform: rotate(45deg);
+
+**/
