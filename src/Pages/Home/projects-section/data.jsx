@@ -3,6 +3,19 @@ import { FiGithub, FiLink } from "react-icons/fi";
 const works = [
     {
         id: 1,
+        img: 'https://i.ibb.co/gPZqkZx/spidey.png',
+        projectName: 'Hubb',
+        projectDescription: `Hubb is a web application that presents the data recived from TMDI api
+        in a clean manner. I learnt how to make request from multiple endpoints, understood the
+        basics and importance of typeScript.`,
+        tools: ['React', 'Sass', 'Framer', 'TypeScript', 'axios'],
+        githubLink: 'https://github.com/Ezeh20/movieHub',
+        liveLink: 'https://hubb-a978d.web.app/',
+        github: <FiGithub />,
+        link: <FiLink />
+    },
+    {
+        id: 2,
         img: 'https://i.ibb.co/ts2dRmJ/todo-profile.png',
         projectName: 'Task master',
         projectDescription: `This is a CRUD application which makes use of firebase as a backend. Users must login or signup to cre
