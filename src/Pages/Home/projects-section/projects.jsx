@@ -53,14 +53,18 @@ const Projects = () => {
                       <p className={styles.projectDetails}>{projectDescription}</p>
                       <div className={styles.toolsGrp}>
                         <div className={styles.tools}>
-                          {tools.map((tool, idx) => {
-                            return (
-                              <div key={idx}>{tool}</div>
-                            )
-                          })}
+                          <div className={styles.toolContainer}>
+                            {tools.map((tool, idx) => {
+                              return (
+                                <div key={idx}>
+                                  <p className={styles.toolsList}>{tool}</p>
+                                </div>
+                              )
+                            })}
+                          </div>
                         </div>
                         <div className={styles.links}>
-                          <Link to={githubLink} target='_blank' className={styles.link}>{github}</Link>
+                          {githubLink ? <Link to={githubLink} target='_blank' className={styles.link}>{github}</Link> : undefined}
                           <Link to={liveLink} target='_blank' className={styles.link}>{link}</Link>
                         </div>
                       </div>

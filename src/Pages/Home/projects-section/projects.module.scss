@@ -15,9 +15,10 @@
         @media screen and (min-width:769px) {
             row-gap: 8rem;
         }
+
         .section {
             width: 100%;
-            height: fn.rem(400);
+            height:fn.rem(500);
             display: flex;
             flex-direction: column;
             position: relative;
@@ -73,7 +74,7 @@
                     height: 100%;
                     position: absolute;
                     background: #0b1c31ff;
-                    opacity: .92;
+                    opacity: .98;
                     top: 0;
                     transition: all 500ms ease-in-out;
 
@@ -106,7 +107,7 @@
                 flex-direction: column;
                 padding-inline: 1rem;
                 row-gap: 1rem;
-                justify-content: space-evenly;
+                justify-content:space-around;
                 color: $text;
 
                 @media screen and (min-width:769px) {
@@ -124,7 +125,7 @@
 
                 .projectDetails {
 
-                    font-size: fn.rem(12);
+                    font-size: fn.rem(14);
 
                     @media screen and (min-width:425px) {
                         font-size: fn.rem(14);
@@ -148,16 +149,27 @@
 
                     .tools {
                         display: flex;
-                        gap: .8rem;
-                        font-size: fn.rem(15);
+                        flex-wrap: wrap;
                         color: $secondary;
                         font-weight: 300;
                         opacity: .9;
-                        
+
+                        .toolContainer {
+                            display: flex;
+                            flex-wrap: wrap;
+                            max-width: 300px;
+                            gap: .8rem;
+                            row-gap: .4rem;
+                            .toolsList {
+                                font-size: fn.rem(15);
+                            }
+                        }
+
+
 
                         @media screen and (min-width:769px) {
                             justify-content: end;
-                            
+
                         }
                     }
 
