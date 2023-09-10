@@ -2,9 +2,8 @@ const content = {
     greeting: 'hello, my name is',
     name: 'Chijioke Ezeh',
     role: `A Frontend Web Developer`,
-    details: `As a frontend web developer, i create visually pleasing and user-friendly web apps.
-     My goal is to achieve pixel-perfect designs and 
-     implementation to problems while prioritizing the user's experience. Thank you.`,
+    details: `I am a Frontend Web Developer who creates visually appealing and user-friendly web apps. My mission? To achieve pixel-perfect 
+    design and seamless functionality while prioritizing the user's experience.`,
     cta: 'Contact me',
 }
 

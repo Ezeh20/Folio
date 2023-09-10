@@ -16,6 +16,7 @@ const Intro = () => {
             </svg>
 
             <p>Design by Brittany Chiang</p>
+            <p>Built by Cj</p>
 
 
         </div>

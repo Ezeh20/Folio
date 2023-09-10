@@ -1,12 +1,11 @@
 const aboutMe = {
-    me: `Hello again; my name is Chijioke Ezeh and i'm a frontend web developer who likes bringing designs and
-    ideas to life.`,
-    para: `I started with how the internet works, the fundamentals of web development then moved to frameworks and other tools such as React, tailwind, sass etc. Having a foundation in Information technology helped me
-    understand the relationship between the internet and the web.`,
-    para2: `Having spent months on my own trying to graps these things, people on social platforms advised those self learning to join 
-    communities and it really helped because i improved alot after going through the zuri training and HNG 9 internship programmes which took 7 months in total.`,
-    final: `I'm still learning and also seeking avenues to improve my ability and experience in this field.`
-
+    me: `Hello, I'm Chijioke Ezeh, a Frontend Web Developer dedicated to crafting visually stunning and user-friendly web applications.`,
+    para: `My goal is to transform creative ideas into functional solutions. I thrive on solving problems and prioritize enhancing the user's experience above all else.`,
+    para2: `With a keen eye for detail and a commitment to staying at the forefront of web development trends, I'm driven to create web experiences that not only meet but exceed expectations. I believe that the blend of creativity and technology can lead to remarkable outcomes and i am also excited to be at the intersection of design and code.`,
+    final: `Thank you for visiting my portfolio, i look forward to collaborate or work with you.`
 }
-
 export default aboutMe
+
+
+
+

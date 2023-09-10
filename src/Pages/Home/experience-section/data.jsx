@@ -1,12 +1,15 @@
-import { GiParrotHead} from "react-icons/gi";
+import { GiParrotHead } from "react-icons/gi";
 const content = [
     {
         id: 1,
-        xp: `Self learning`,
-        period: `January 2022 - till date`,
-        title: `Learning`,
-        shalaye1:`I started my journey with online resources in the year 2022 where i put in effort
-        learning things everyday and still do till today.`
+        xp: `Edustipend`,
+        period: `June 2023 - till date ( Contract )`,
+        title: `Frontend Developer`,
+        shalaye1: `Using React, i am required to build UI components and features that meets the design and product requirements.`,
+        shalaye2: ` I work and collaborate closely with technical leadership, product designers, the product managers and the backend team.`,
+        shalaye3: `Contribute to the development of the component library system using Storybook.`,
+        shalaye4: `Develop and write unit tests for code written in line with the team’s defined software development process.`,
+        shalaye5: `Take part in daily standup and other required team meetings.`,
     },
     {
         id: 2,
@@ -34,10 +37,10 @@ const content = [
         id: 4,
         xp: `HNG 9 finalist`,
         period: `September 2022 - January 2023`,
-        title: `Frontend developer intern`,
+        title: `Frontend intern`,
         shalaye1: `Started off as an idependent frontend developer intern using React to accomplish tasks. `,
         shalaye2: `Got placed in a team of product designers,marketing and sales, project managers, product owner and developers.`,
-        shalaye3: `Contributed as a frontend developer working with other developers in the team by implementing the designs and user's flow created by the product owner and designers which was always followed up by the project managers and made it to the final stage.`,
+        shalaye3: `Contributed as a frontend developer working with other developers in the team by implementing the designs and user's flow created by the product owner and designers which was always followed up by the project managers.`,
     }
 ]
 
