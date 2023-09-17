@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import React, { useEffect } from 'react'
+import React from 'react'
+import resume from '../../../../../public/Chijioke-Ezeh.pdf'
 import Button from '../../../../Components/Button/button'
 import Socials from '../Socials/socials'
 import styles from './content.module.scss'
@@ -88,6 +89,9 @@ const Content = () => {
           variants={contentTop}
           className={styles.btn}>
           <Button btnType='cta' onClick={() => window.location.href = 'mailto:chijioke1ezeh@gmail.com'}>{cta}</Button>
+          <a href={resume} rel="noopener noreferrer" download='Chijioke-resume.pdf' target='_blank' className={styles.resume}>
+            Resume
+          </a>
         </motion.div>
       </div>
       <Socials type='small' />

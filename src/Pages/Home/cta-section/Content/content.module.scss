@@ -7,9 +7,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
-   @media screen and (min-width:769px) {
-    row-gap: 0;
-   }
+
+    @media screen and (min-width:769px) {
+        row-gap: 0;
+    }
 
     .contentTop {
         display: flex;
@@ -53,6 +54,7 @@
                 @media screen and (min-width:680px) {
                     font-size: fn.rem(40);
                 }
+
                 @media screen and (min-width:1440px) {
                     font-size: fn.rem(50);
                 }
@@ -71,10 +73,32 @@
 
         .btn {
             margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
             z-index: 20;
+
+            .resume {
+                background-color: transparent;
+                outline: none;
+                border: 0.5px solid $secondary;
+                width: max-content;
+                padding: .5rem 1rem;
+                border-radius: 5px;
+                color: $secondary;
+                font-weight: 400;
+                font-size: 13px;
+                font-size: 16px;
+                padding: .7rem 1.2rem;
+
+                @media screen and (min-width:769px) {
+                    font-size: 18px;
+                    padding: 1rem 1.4rem;
+                }
+            }
         }
     }
-    .socials{
+
+    .socials {
         display: flex;
     }
 

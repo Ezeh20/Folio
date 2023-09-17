@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../Container/container'
+import resume from '../../../public/Chijioke-Ezeh.pdf'
 import menu from './data'
 import styles from './navigation.module.scss'
 import { motion } from "framer-motion"
@@ -81,7 +82,7 @@ const Navigation = () => {
                                 })
                             }
 
-                            <a href='https://drive.google.com/uc?export=download&id=1V7xDv1U2LVnDHJWz2FEWjMOZ_7oMlTC2' rel="noopener noreferrer" download='Chijioke-resume.pdf'>
+                            <a href={resume} rel="noopener noreferrer" download='Chijioke-resume.pdf' target='_blank'>
                                 <Button>Resume</Button>
                             </a>
                         </motion.ul>
