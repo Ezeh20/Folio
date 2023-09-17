@@ -82,7 +82,7 @@ const Navigation = () => {
                                 })
                             }
 
-                            <a href={resume} rel="noopener noreferrer" download='Chijioke-resume.pdf' target='_blank'>
+                            <a href={resume} rel="noopener noreferrer" download='Chijioke-Ezeh.pdf' target='_blank'>
                                 <Button>Resume</Button>
                             </a>
                         </motion.ul>

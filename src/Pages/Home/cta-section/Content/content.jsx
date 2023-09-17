@@ -89,7 +89,7 @@ const Content = () => {
           variants={contentTop}
           className={styles.btn}>
           <Button btnType='cta' onClick={() => window.location.href = 'mailto:chijioke1ezeh@gmail.com'}>{cta}</Button>
-          <a href={resume} rel="noopener noreferrer" download='Chijioke-resume.pdf' target='_blank' className={styles.resume}>
+          <a href={resume} rel="noopener noreferrer" download='Chijioke-Ezeh.pdf' target='_blank' className={styles.resume}>
             Resume
           </a>
         </motion.div>
