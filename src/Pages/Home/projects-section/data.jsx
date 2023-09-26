@@ -28,14 +28,13 @@ const works = [
     },
     {
         id: 2,
-        img: 'https://i.ibb.co/5jG8YJk/meta.png',
-        projectName: 'Meta bnb',
-        projectDescription: `Meta bnb is one of the tasks i did during the HNG programme, it is simply a two paged web app. I was given a figma file
-        then asked to produce a pixel perfect implementation which i did well, LazyLoading images when the are in view is one concept i came across while performing this
-        task.`,
-        tools: ['React', 'Css'],
-        githubLink: 'https://github.com/Ezeh20/Metabnb-hng',
-        liveLink: 'https://ezeh20.github.io/Metabnb-hng/',
+        img: 'https://i.ibb.co/pdZ1dmK/Screenshot-152.png',
+        projectName: "drag n' drop",
+        projectDescription: `drag n' drop is a gallery that displays 15 images and discriptions of greek mythology gods which can be dragged to rearrange. 
+        I used Nextjs for the project so as to learn more about the server side of things such as authentication and database management system.`,
+        tools: ['Nextjs', 'Scss', 'MongoDB', 'NextAuth'],
+        githubLink: 'https://image-hng.vercel.app/',
+        liveLink: 'https://github.com/Ezeh20/image-hng',
         github: <FiGithub />,
         link: <FiLink />
     },
@@ -79,20 +78,20 @@ const works = [
         github: <FiGithub />,
         link: <FiLink />
     },
-    {
-        id: 6,
-        img: 'https://i.ibb.co/c6pCN8K/e-mart.png',
-        projectName: 'E-mart',
-        projectDescription: `E-mart is an ecommerce. This project thought me the essence of lifting state up, state management using the context api, fetching 
-        data from firebase, routing in react and seeing everything as a component. The products are fetched from firebase instead of living in the client side.`,
-        tools: ['React', 'Sass', 'Firebase'],
-        githubLink: 'https://github.com/Ezeh20/udemy--clone',
-        liveLink: 'https://ezeh20.github.io/udemy--clone/',
-        githubLink: 'https://github.com/Ezeh20/E-mart',
-        liveLink: 'https://ezeh20.github.io/E-mart/',
-        github: <FiGithub />,
-        link: <FiLink />
-    },
+    // {
+    //     id: 6,
+    //     img: 'https://i.ibb.co/c6pCN8K/e-mart.png',
+    //     projectName: 'E-mart',
+    //     projectDescription: `E-mart is an ecommerce. This project thought me the essence of lifting state up, state management using the context api, fetching 
+    //     data from firebase, routing in react and seeing everything as a component. The products are fetched from firebase instead of living in the client side.`,
+    //     tools: ['React', 'Sass', 'Firebase'],
+    //     githubLink: 'https://github.com/Ezeh20/udemy--clone',
+    //     liveLink: 'https://ezeh20.github.io/udemy--clone/',
+    //     githubLink: 'https://github.com/Ezeh20/E-mart',
+    //     liveLink: 'https://ezeh20.github.io/E-mart/',
+    //     github: <FiGithub />,
+    //     link: <FiLink />
+    // },
     {
         id: 7,
         img: 'https://i.ibb.co/C6X60nL/job-listing.png',
