@@ -74,7 +74,7 @@ const Projects = () => {
               })
             }
             {
-              more >= 8 ? '' : <div className={styles.showMore}>
+              more >= 9 ? '' : <div className={styles.showMore}>
                 <Button btnType='more' onClick={() => setMore(count => count + 2)}>Show more</Button>
               </div>
             }

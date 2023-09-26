@@ -8,7 +8,7 @@ const works = [
         projectDescription: `Edustipend is an organization that provides learning resources to individuals. The team is made up of several persons who work in smaller teams.
         I worked on three sections of the landing page,
         was responsible for the stipend application process/account creation and also the user's dashboard. I got to write unit tests for the first time
-        using jest and React testing library which was pretty stressfull at first but enjoyable later on.`,
+        using jest and React testing library which was pretty stressfull at first.`,
         tools: ['React', 'Jest', 'React testing library', 'storybook', 'PWA', 'api'],
         liveLink: 'https://edustipend.org/',
         link: <FiLink />
@@ -17,7 +17,7 @@ const works = [
         id: 1,
         img: 'https://i.ibb.co/gPZqkZx/spidey.png',
         projectName: 'Hubb',
-        projectDescription: `Hubb is a web application that presents the data recived from TMDI api
+        projectDescription: `Hubb is a web application that presents movie data recived from TMDI api
         in a clean manner. I learnt how to make request from multiple endpoints, understood the
         basics and importance of typeScript.`,
         tools: ['React', 'Sass', 'Framer', 'TypeScript', 'axios'],
@@ -93,7 +93,7 @@ const works = [
     //     link: <FiLink />
     // },
     {
-        id: 7,
+        id: 6,
         img: 'https://i.ibb.co/C6X60nL/job-listing.png',
         projectName: 'Job board with filtering',
         projectDescription: `This job board filters in items based on selected tags. Each job posting has 1 or more tags which may also
@@ -107,7 +107,7 @@ const works = [
     },
 
     {
-        id: 8,
+        id: 7,
         img: 'https://i.ibb.co/qBwY2SV/space-tourism.png',
         projectName: 'Space-tourism',
         projectDescription: `Space-tourism is a muilt page site, A figma file was provided and also the needed assets including a style guilde. `,
@@ -118,7 +118,7 @@ const works = [
         link: <FiLink />
     },
     {
-        id: 9,
+        id: 8,
         img: 'https://i.ibb.co/vmpzxfm/Rest-country.png',
         projectName: 'REST country',
         projectDescription: `This project uses the REST countries api to display 250 countries data including their flags. I got to know about the
