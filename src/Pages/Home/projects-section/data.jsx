@@ -33,8 +33,8 @@ const works = [
         projectDescription: `drag n' drop is a gallery that displays 15 images and discriptions of greek mythology gods which can be dragged to rearrange. 
         I used Nextjs for the project so as to learn more about the server side of things such as authentication and database management system.`,
         tools: ['Nextjs', 'Scss', 'MongoDB', 'NextAuth'],
-        githubLink: 'https://image-hng.vercel.app/',
-        liveLink: 'https://github.com/Ezeh20/image-hng',
+        githubLink: 'https://github.com/Ezeh20/image-hng',
+        liveLink: 'https://image-hng.vercel.app/',
         github: <FiGithub />,
         link: <FiLink />
     },
