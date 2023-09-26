@@ -27,20 +27,23 @@ const variantIconsEven = {
     },
     show: {
         y: 0,
-        opacity: 1
-    }
+        opacity: .8,
+    },
+
 }
 
 const variantIconsOdd = {
     hidden: {
         y: 100,
-        opacity: 0
+        opacity: 0,
+
     },
     show: {
         y: 0,
-        opacity: 1
+        opacity: .8,
     }
 }
+
 const Skills = () => {
     return (
         <Container>
@@ -64,8 +67,10 @@ const Skills = () => {
                                         whileInView='show'
                                         transition={{ duration: .2, delay: id * .1, when: "afterParent" }}
                                         viewport={{ once: true }}
-                                        key={id} className={styles.tool}>
-                                        <div>{icon}</div>
+                                        whileHover={{ scale: 1.1, transition: { delay: 0, duration: .2 } }}
+                                        key={id} className={styles.tool}
+                                    >
+                                        {icon}
                                         <p className={styles.title}>{title}</p>
                                     </motion.div>
                                 )

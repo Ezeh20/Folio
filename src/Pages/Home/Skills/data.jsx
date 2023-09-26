@@ -1,5 +1,9 @@
-import { SiJavascript, SiEslint, SiFirebase, SiTailwindcss, SiGit, SiReact, SiVite, SiFigma, SiCss3, SiHtml5, SiFramer } from "react-icons/si";
+import {
+    SiJavascript, SiEslint, SiFirebase, SiTailwindcss, SiGit,
+    SiReact, SiVite, SiFigma, SiCss3, SiHtml5, SiFramer, SiJest, SiMongodb, SiTestinglibrary, SiStorybook,SiVitest
+} from "react-icons/si";
 import { FaSass } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 
 
 const tools = [
@@ -62,7 +66,38 @@ const tools = [
         id: 11,
         icon: <SiHtml5 />,
         title: `html5`
-    }
+    },
+    {
+        id: 13,
+        icon: <SiJest/>,
+        title: `jest`
+    },
+    {
+        id: 14,
+        icon: <TbBrandNextjs/>,
+        title: `nextjs`
+    },
+    {
+        id: 15,
+        icon: <SiMongodb/>,
+        title: `mongodb`
+    },
+    {
+        id: 16,
+        icon: <SiStorybook/>,
+        title: `storybook`
+    },
+    {
+        id: 17,
+        icon: <SiTestinglibrary/>,
+        title: `testing library`
+    },
+    {
+        id: 18,
+        icon: <SiVitest/>,
+        title: `vitest`
+    },
+
 ]
 
 export default tools
