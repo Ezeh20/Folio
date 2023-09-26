@@ -40,6 +40,19 @@ const works = [
     },
     {
         id: 3,
+        img: 'https://i.ibb.co/tcx5LGm/middle-man.png',
+        projectName: 'Middle man',
+        projectDescription: `Middle man is a loan agreement generator that generates an agreement between two parites. The user needs to 
+        fill in the required information and must select between two variations [mercy , wickedness] then an agreement will be generated based
+        on the filled form. I learnt how to utilize localStorage and also how to make use of user's data collected through a form.`,
+        tools: ['React', 'Sass'],
+        githubLink: 'https://github.com/Ezeh20/Loan_agreement_generator',
+        liveLink: 'https://ezeh20.github.io/Loan_agreement_generator/',
+        github: <FiGithub />,
+        link: <FiLink />
+    },
+    {
+        id: 4,
         img: 'https://i.ibb.co/ts2dRmJ/todo-profile.png',
         projectName: 'Task master',
         projectDescription: `This is a CRUD application which makes use of firebase as a backend. Users must login or signup to cre
@@ -52,19 +65,7 @@ const works = [
         github: <FiGithub />,
         link: <FiLink />
     },
-    {
-        id: 4,
-        img: 'https://i.ibb.co/tcx5LGm/middle-man.png',
-        projectName: 'Middle man',
-        projectDescription: `Middle man is a loan agreement generator that generates an agreement between two parites. The user needs to 
-        fill in the required information and must select between two variations [mercy , wickedness] then an agreement will be generated based
-        on the filled form. I learnt how to utilize localStorage and also how to make use of user's data collected through a form.`,
-        tools: ['React', 'Sass'],
-        githubLink: 'https://github.com/Ezeh20/Loan_agreement_generator',
-        liveLink: 'https://ezeh20.github.io/Loan_agreement_generator/',
-        github: <FiGithub />,
-        link: <FiLink />
-    },
+
     {
         id: 5,
         img: 'https://i.ibb.co/0GpvY8p/udemy.png',
