@@ -32,7 +32,7 @@ const works = [
         basics and importance of typeScript.`,
 		tools: ["React", "Sass", "Framer", "TypeScript", "axios"],
 		githubLink: "https://github.com/Ezeh20/movieHub",
-		liveLink: "https://hubb-a978d.web.app/",
+		liveLink: "https://movie-hub-opal.vercel.app/",
 		github: <FiGithub />,
 		link: <FiLink />,
 	},
