@@ -62,7 +62,7 @@
                     object-fit: cover;
 
                     @media screen and (min-width:769px) {
-                        width: 60%;
+                        width: 65%;
                         height: 100%;
                     }
                 }
@@ -77,7 +77,7 @@
                     transition: all 500ms ease-in-out;
 
                     @media screen and (min-width:769px) {
-                        width: 60%;
+                        width: 65%;
                         background: #1d4753;
                         opacity: .9;
                     }
@@ -115,7 +115,7 @@
                 }
 
                 @media screen and (min-width:1200px) {
-                    width: 55%;
+                    width: 70%;
                 }
 
 
@@ -130,7 +130,7 @@
                     font-size: fn.rem(14);
 
                     @media screen and (min-width:768px) {
-                        font-size: fn.rem(16);
+                        font-size: fn.rem(15.5);
                     }
 
                     @media screen and (min-width:769px) {
@@ -151,20 +151,18 @@
 
                     .tools {
                         display: flex;
-                        flex-wrap: wrap;
-                        color: $secondary;
+                        color: $heading;
                         font-weight: 300;
                         opacity: .9;
 
                         .toolContainer {
                             display: flex;
                             flex-wrap: wrap;
-                            max-width: 300px;
                             gap: .8rem;
                             row-gap: .4rem;
 
                             .toolsList {
-                                font-size: fn.rem(15);
+                                font-size: fn.rem(13.5);
                             }
                         }
 
@@ -186,7 +184,8 @@
                         }
 
                         .link {
-                            color: $text;
+                            color: $heading;
+                            width: 22px;
 
                             &:hover {
                                 cursor: pointer;

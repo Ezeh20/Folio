@@ -1,6 +1,6 @@
 import {
     SiJavascript, SiEslint, SiFirebase, SiTailwindcss, SiGit,
-    SiReact, SiVite, SiFigma, SiCss3, SiHtml5, SiFramer, SiJest, SiMongodb, SiTestinglibrary, SiStorybook, SiVitest
+    SiReact, SiVite, SiFigma, SiCss3, SiHtml5, SiFramer, SiJest, SiMongodb, SiTestinglibrary, SiStorybook, SiVitest, SiVuedotjs, SiNuxtdotjs
 } from "react-icons/si";
 import { FaSass } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -24,80 +24,89 @@ const tools = [
     },
     {
         id: 4,
+        icon: <SiNuxtdotjs />,
+        title: `nuxtjs`
+    },
+    {
+        id: 5,
         icon: <SiMongodb />,
         title: `mongodb`
     },
     {
-        id: 5,
+        id: 6,
         icon: <SiFirebase />,
         title: `fireBase`
     },
     {
-        id: 6,
+        id: 7,
         icon: <SiJest />,
         title: `jest`
     },
     {
-        id: 7,
+        id: 8,
         icon: <SiStorybook />,
         title: `storybook`
     },
     {
-        id: 8,
+        id: 9,
         icon: <SiTailwindcss />,
         title: `tailWind`
     },
     {
-        id: 9,
+        id: 10,
         icon: <FaSass />,
         title: `sass`
     },
     {
-        id: 10,
+        id: 11,
+        icon: <SiVuedotjs />,
+        title: `vue`
+    },
+    {
+        id: 12,
         icon: <SiGit />,
         title: `git`
     },
     {
-        id: 11,
+        id: 13,
         icon: <SiReact />,
         title: `react`
     },
     {
-        id: 12,
+        id: 14,
         icon: <SiFramer />,
         title: `framer`
     },
     {
-        id: 13,
+        id: 15,
         icon: <SiVite />,
         title: `vite`
     },
     {
-        id: 14,
+        id: 16,
         icon: <SiFigma />,
         title: `figma`
     },
     {
-        id: 15,
+        id: 17,
         icon: <SiCss3 />,
         title: `css3`
     },
     {
-        id: 16,
+        id: 18,
         icon: <SiHtml5 />,
         title: `html5`
     },
     {
-        id: 17,
+        id: 19,
         icon: <SiTestinglibrary />,
         title: `testing library`
     },
     {
-        id: 18,
+        id: 20,
         icon: <SiVitest />,
         title: `vitest`
     },
-
 ]
 
 export default tools
